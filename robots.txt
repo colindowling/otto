@@ -1,0 +1,10 @@
+# OTTO — donewithotto.com
+#
+# PRE-LAUNCH: crawling is closed while the site runs on its temporary
+# DigitalOcean URL. At domain cutover, replace the Disallow line below
+# with "Allow: /" and resubmit the sitemap in Google Search Console.
+
+User-agent: *
+Disallow: /
+
+Sitemap: https://donewithotto.com/sitemap.xml

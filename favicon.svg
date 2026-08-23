@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="OTTO">
+  <rect width="64" height="64" rx="10" fill="#1d1b19"/>
+  <circle cx="17" cy="32" r="4.5" fill="#7c8b99"/>
+  <text x="38" y="32" dy="0.35em" text-anchor="middle"
+        font-family="'Space Grotesk', 'Helvetica Neue', Arial, sans-serif"
+        font-size="27" font-weight="700" fill="#f2efe9" letter-spacing="0.5">O</text>
+</svg>

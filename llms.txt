@@ -1,0 +1,51 @@
+# OTTO
+
+> Fully managed AI agent infrastructure for B2B sales and marketing teams. OTTO deploys agents into a client's existing CRM and GTM stack, then stays under the hood tuning, monitoring and governing them every week. Not software you log into, and not a project that ends at launch. Tagline: agents deployed, agents operated.
+
+## The problem OTTO addresses
+Most teams can build an agent. Few can keep one running. Agents get built ad hoc by reps and marketers, then break silently on an API or CRM change, drift out of date as the ICP shifts, and accumulate unreviewed access. OTTO calls this agent sprawl, and the operating layer is what it sells.
+
+## How the work runs
+1. Assess what the client already has, improving return on existing tools, technology and people before adding anything.
+2. Prioritize by impact on revenue, profitability and operational effectiveness.
+3. Iterate continuously. New agents and improvements to existing ones are ongoing, not a fixed project scope.
+4. Manage and maintain in the background: security, resource efficiency, verifiable ROI.
+Then it loops.
+
+## What every retainer includes
+Agent build and deployment across the GTM stack; weekly tuning based on live performance data; uptime monitoring and incident response; a live agent inventory with access control and audit trail; a monthly pit report; a direct Slack channel to the OTTO team.
+
+## Solutions (outcomes)
+- Bigger deals — pre-call research and pain mapping, competitor battlecard delivery, content gap filler. https://donewithotto.com/solutions/bigger-deals/
+- Shorter sales cycles — post-call follow-up, no-show recovery, lead routing and scoring. https://donewithotto.com/solutions/shorter-sales-cycles/
+- More revenue — renewal and expansion signals, deal risk flagging, pre-event attendee warming. https://donewithotto.com/solutions/more-revenue/
+
+## Pricing
+- GTM Agent Blueprint — $6,500 one-time. Required first step. Assessment plus prioritized roadmap. Client keeps the deliverable regardless; 50% credited toward year one on signing a retainer.
+- Foundation — $5,000/mo, 12-month term. 3–4 agents live in the first 30 days, 1 new agent per month after.
+- Growth — $9,500/mo, 12-month term. 8–10 agents live in the first 60 days, 2 new agents per month after.
+- Scale — $17,000/mo, 12-month term. 15+ agents live in the first 90 days, 3 new agents per month after, dedicated pod.
+- Custom — multi-brand, multi-region or heavily regulated organisations.
+Retainers exclude third-party costs the client owns directly, such as CRM seats, enrichment data, sending infrastructure and model API usage on the client's own accounts.
+
+## Security and governance
+Agents operate inside the client's own systems; OTTO does not copy customer or pipeline data into an OTTO-owned platform. Access is scoped per agent rather than standing administrative access, every agent action is logged, a kill switch is available, and credentials are revoked at the end of an engagement. Client data is not used to train any AI model that leaves the business.
+
+## Ownership
+The client owns its data, workflows and business outcomes. OTTO retains its methodology, tooling and general know-how. On termination OTTO provides documentation for every agent built, so the client or another provider can continue operating or rebuilding them.
+
+## Who it is for
+B2B companies at roughly $10M–$100M in revenue with a real CRM and GTM stack already in place, typically having tried building agents in-house or with a point vendor and watched them stall. Not a fit for pre-revenue or pre-product-market-fit companies, one-time builds with no ongoing management, or website chatbots.
+
+## Contact
+- Book a pit review (30 minutes, no pitch): https://donewithotto.com/book/
+- Enquiries are handled through the booking form; there is no public email address for this domain.
+
+## Key pages
+- Home: https://donewithotto.com/
+- Solutions: https://donewithotto.com/solutions/
+- Build vs. Managed: https://donewithotto.com/build-vs-managed/
+- Pricing: https://donewithotto.com/pricing/
+- FAQ: https://donewithotto.com/faq/
+- Privacy: https://donewithotto.com/privacy/
+- Terms: https://donewithotto.com/terms/
