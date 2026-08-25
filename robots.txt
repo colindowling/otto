@@ -1,10 +1,11 @@
-# OTTO — donewithotto.com
+# OTTO / donewithotto.com
 #
-# PRE-LAUNCH: crawling is closed while the site runs on its temporary
-# DigitalOcean URL. At domain cutover, replace the Disallow line below
-# with "Allow: /" and resubmit the sitemap in Google Search Console.
+# Crawling is open. Automated crawlers, SEO auditors, and AI/LLM agents
+# are all permitted. See /llms.txt for content-usage guidance.
 
 User-agent: *
-Disallow: /
+Allow: /
+
+LLM-Policy: /llms.txt
 
 Sitemap: https://donewithotto.com/sitemap.xml
