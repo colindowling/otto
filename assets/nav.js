@@ -25,9 +25,17 @@
         if (!drop.contains(e.relatedTarget)) open(false);
       });
       if (trigger) {
+        var isLink = trigger.tagName === 'A' && trigger.getAttribute('href');
         trigger.addEventListener('click', function (e) {
-          // let the trigger's own href work on a second click; first click just opens
-          if (drop.getAttribute('data-open') !== 'true') { e.preventDefault(); open(true); }
+          var isOpen = drop.getAttribute('data-open') === 'true';
+          if (!isLink) {
+            // no destination of its own — the trigger just toggles
+            e.preventDefault();
+            open(!isOpen);
+            return;
+          }
+          // has an href: first click opens, second click follows the link
+          if (!isOpen) { e.preventDefault(); open(true); }
         });
       }
       drop.addEventListener('keydown', function (e) {
@@ -86,15 +94,28 @@
 
     /* ---- mark the current page (and current section) in the nav ---- */
     var here = window.location.pathname.replace(/index\.html$/, '');
-    header.querySelectorAll('a[href]').forEach(function (a) {
-      var href = a.getAttribute('href');
-      if (!href || href.charAt(0) !== '/' || href.indexOf('#') !== -1 || here === '/') return;
-      if (href === here) {
-        a.setAttribute('aria-current', 'page');
-      } else if (a.classList.contains('navdrop-trigger') && href.length > 1 && here.indexOf(href) === 0) {
-        a.setAttribute('aria-current', 'page');
-      }
-    });
+    if (here !== '/') {
+      header.querySelectorAll('a[href]').forEach(function (a) {
+        var href = a.getAttribute('href');
+        if (!href || href.charAt(0) !== '/' || href.indexOf('#') !== -1) return;
+        if (href === here) {
+          a.setAttribute('aria-current', 'page');
+        } else if (a.classList.contains('navdrop-trigger') && href.length > 1 && here.indexOf(href) === 0) {
+          a.setAttribute('aria-current', 'page');
+        }
+      });
+      // a dropdown is "current" when any of its own entries is the page you're on,
+      // which is the only way a trigger without an href of its own can be marked
+      Array.prototype.forEach.call(nav.querySelectorAll('.navdrop'), function (drop) {
+        var trigger = drop.querySelector('.navdrop-trigger');
+        if (!trigger || trigger.getAttribute('aria-current')) return;
+        var hit = Array.prototype.some.call(drop.querySelectorAll('.navdrop-menu a[href]'), function (a) {
+          var h = a.getAttribute('href');
+          return h && h.length > 1 && here.indexOf(h) === 0;
+        });
+        if (hit) trigger.setAttribute('aria-current', 'page');
+      });
+    }
   }
 
   /* ---- hairline border once scrolled (home page adds its own on-dark logic) ---- */
