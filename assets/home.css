@@ -36,7 +36,7 @@
   header.on-dark .navlinks a:not(.nav-cta):hover{color:var(--off-white);}
   header.on-dark .logo{color:var(--off-white);}
   header.on-dark .nav-cta{background:var(--gold);color:var(--charcoal);}
-  nav{display:flex;align-items:center;justify-content:space-between;padding:20px 56px;max-width:1180px;margin:0 auto;}
+  header nav{display:flex;align-items:center;justify-content:space-between;padding:20px 56px;max-width:1180px;margin:0 auto;}
   .logo{font-size:19px;font-weight:700;letter-spacing:0.02em;display:flex;align-items:center;gap:9px;transition:color 0.2s ease;font-family:'Space Grotesk',sans-serif;}
   .logo .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);}
   .navlinks{display:flex;gap:34px;font-size:13px;font-weight:600;letter-spacing:0.02em;color:var(--muted);align-items:center;transition:color 0.2s ease;}

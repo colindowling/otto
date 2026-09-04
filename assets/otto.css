@@ -28,8 +28,8 @@ img{max-width:100%;display:block;}
 
 /* ---------- NAV ---------- */
 header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
-nav{display:flex;align-items:center;justify-content:space-between;padding:18px 56px;max-width:1100px;margin:0 auto;gap:24px;}
-@media (max-width:640px){nav{padding:16px 24px;}}
+header nav{display:flex;align-items:center;justify-content:space-between;padding:18px 56px;max-width:1100px;margin:0 auto;gap:24px;}
+@media (max-width:640px){header nav{padding:16px 24px;}}
 .logo{font-size:19px;font-weight:700;letter-spacing:0.02em;display:flex;align-items:center;gap:9px;font-family:'Space Grotesk',sans-serif;flex-shrink:0;}
 .logo .dot{width:7px;height:7px;border-radius:50%;background:var(--slate);flex-shrink:0;}
 .navlinks{display:flex;gap:26px;font-size:13px;font-weight:600;color:var(--muted);align-items:center;}
