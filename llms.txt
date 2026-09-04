@@ -1,6 +1,6 @@
 # OTTO
 
-> Fully managed AI agent infrastructure for B2B sales and marketing teams. OTTO deploys agents into a client's existing CRM and GTM stack, then stays under the hood tuning, monitoring and governing them every week. Not software you log into, and not a project that ends at launch. Tagline: agents deployed, agents operated.
+> Fully managed AI agent infrastructure for B2B sales and marketing teams that do not run Salesforce. In August 2026 Salesforce and Anthropic shipped a first-party Claude integration for Salesforce sellers. No equivalent exists for HubSpot, Pipedrive, ConnectWise, Autotask or HaloPSA. OTTO is that layer for everyone else: agents built directly into the CRM or PSA a client already runs, then tuned, monitored and governed every week. Not software you log into, and not a project that ends at launch. Tagline: agents deployed, agents operated.
 
 ## The problem OTTO addresses
 Most teams can build an agent. Few can keep one running. Agents get built ad hoc by reps and marketers, then break silently on an API or CRM change, drift out of date as the ICP shifts, and accumulate unreviewed access. OTTO calls this agent sprawl, and the operating layer is what it sells.
@@ -16,9 +16,17 @@ Then it loops.
 Agent build and deployment across the GTM stack; weekly tuning based on live performance data; uptime monitoring and incident response; a live agent inventory with access control and audit trail; a monthly pit report; a direct Slack channel to the OTTO team.
 
 ## Solutions (outcomes)
+- More leads — outbound prospecting, website intent, inbound lead response, buying-signal monitoring. https://donewithotto.com/solutions/more-leads/
 - Bigger deals — pre-call research and pain mapping, competitor battlecard delivery, content gap filler. https://donewithotto.com/solutions/bigger-deals/
 - Shorter sales cycles — post-call follow-up, no-show recovery, lead routing and scoring. https://donewithotto.com/solutions/shorter-sales-cycles/
 - More revenue — renewal and expansion signals, deal risk flagging, pre-event attendee warming. https://donewithotto.com/solutions/more-revenue/
+
+## Platforms
+OTTO builds inside the client's existing system of record rather than introducing a new one. Dedicated coverage:
+- HubSpot — deal records that update themselves, ICP-accurate lead routing, renewal and expansion signals read off HubSpot properties. https://donewithotto.com/platforms/hubspot/
+- Pipedrive — automatic activity logging, in-pipeline deal risk flags, same-hour follow-up. https://donewithotto.com/platforms/pipedrive/
+- ConnectWise & Autotask — renewal tracking against ticket and usage data, live stakeholder mapping, RFP and security questionnaire drafting. Also covers HaloPSA and the separate CRM that usually sits alongside a PSA. https://donewithotto.com/platforms/connectwise-autotask/
+Zoho, Close, Freshsales, Salesforce and the long tail of PSA and billing systems are workable but have no dedicated page yet.
 
 ## Pricing
 - GTM Agent Blueprint — $6,500 one-time. Required first step. Assessment plus prioritized roadmap. Client keeps the deliverable regardless; 50% credited toward year one on signing a retainer.
@@ -44,8 +52,13 @@ B2B companies at roughly $10M–$100M in revenue with a real CRM and GTM stack a
 ## Key pages
 - Home: https://donewithotto.com/
 - Solutions: https://donewithotto.com/solutions/
+- Platforms: https://donewithotto.com/platforms/
+- Blog: https://donewithotto.com/blog/
 - Build vs. Managed: https://donewithotto.com/build-vs-managed/
 - Pricing: https://donewithotto.com/pricing/
 - FAQ: https://donewithotto.com/faq/
 - Privacy: https://donewithotto.com/privacy/
 - Terms: https://donewithotto.com/terms/
+
+## Trademark note
+Claudeforce and Salesforce are trademarks of Salesforce, Inc. Claude is a trademark of Anthropic PBC. OTTO is not affiliated with, endorsed by, or a partner of either company. Those names appear on this site only as factual comparative reference in editorial content.
