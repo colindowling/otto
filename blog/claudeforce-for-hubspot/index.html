@@ -34,6 +34,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/otto.css">
+<style>
+  .hero h1 .typewriter {
+    display: inline;
+    border-right: 2px solid currentColor;
+    animation: tw-blink 0.8s step-end infinite;
+  }
+  .hero h1 .typewriter.done { border-right-color: transparent; animation: none; }
+  .hero h1 .hero-line2 { opacity: 0; display: block; }
+  .hero h1 .hero-line2.typing { opacity: 1; }
+  .hero h1 .hero-line2 .typewriter { border-right-color: currentColor; }
+  .hero h1 .hero-line2 { font-weight: 400; opacity: 0; }
+  @keyframes tw-blink { 50% { border-color: transparent; } }
+  .hero .sub { opacity: 0; transition: opacity 0.6s ease; }
+  .hero .sub.visible { opacity: 1; }
+</style>
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://donewithotto.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://donewithotto.com/blog/"},{"@type":"ListItem","position":3,"name":"Is There a Claudeforce for HubSpot?","item":"https://donewithotto.com/blog/claudeforce-for-hubspot/"}]},{"@type":"BlogPosting","headline":"Is There a Claudeforce for HubSpot?","description":"Claudeforce gives Salesforce sellers 37 prebuilt AI skills inside Claude. HubSpot doesn't get it. Here's what Claudeforce actually is, what's Salesforce-locked, and how to build the equivalent on HubSpot.","url":"https://donewithotto.com/blog/claudeforce-for-hubspot/","datePublished":"2026-09-05","dateModified":"2026-09-05","author":{"@type":"Organization","name":"OTTO","url":"https://donewithotto.com/"},"publisher":{"@id":"https://donewithotto.com/#org"},"image":"https://donewithotto.com/assets/og.png","mainEntityOfPage":"https://donewithotto.com/blog/claudeforce-for-hubspot/","wordCount":2900,"articleSection":"Commentary","keywords":["Claudeforce","HubSpot","Salesforce","Anthropic","Claude","GTM AI","AI agents","CRM"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is there a Claudeforce for HubSpot?","acceptedAnswer":{"@type":"Answer","text":"No. Claudeforce is a platform partnership between Salesforce and Anthropic, built against Salesforce's data model and permissions layer. There is no equivalent product shipping for HubSpot from either company. However, the individual capabilities Claudeforce packages can be built on HubSpot using the HubSpot Claude Connector (expanded July 2026 with MCP server access, revenue objects, and campaign tools), HubSpot's Agent Builder (public beta July 2026), workflow webhook integrations with Claude's API, and tools like Zapier or Make."}},{"@type":"Question","name":"What is Claudeforce?","acceptedAnswer":{"@type":"Answer","text":"Claudeforce is an expanded partnership between Salesforce and Anthropic announced on August 26, 2026. It includes Claude as the default reasoning model across four Agentforce surfaces (Atlas Reasoning Engine, Vibes, Coworker, and Agent Builder) and a new Salesforce in Claude plugin with 37 prebuilt sales skills. Those skills cover pipeline management, deal strategy, prospecting, meetings, and CRM governance, all executable from Claude's chat interface against live Salesforce data. Actions route through Salesforce's permissions and security perimeter via Amazon Bedrock."}},{"@type":"Question","name":"Can you connect Claude to HubSpot?","acceptedAnswer":{"@type":"Answer","text":"Yes. HubSpot launched the first CRM connector for Claude in July 2025 and expanded it in July 2026 with landing page creation, campaign attribution, email analytics, revenue objects (quotes, contracts, invoices), and Help Desk conversation access. The connector runs through HubSpot's MCP server and requires a paid Claude subscription for each user plus Super Admin approval in HubSpot. It provides Claude with read and write access to CRM data but does not include prebuilt, governed skills like Claudeforce offers for Salesforce users."}}]}]}
@@ -75,7 +90,10 @@
   <div class="wrap">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">/</span><a href="/blog/">Blog</a><span class="sep">/</span><span>This post</span></nav>
     <div class="hero-index"><span class="num">/ Blog</span><span class="line"></span><span class="txt">Commentary</span></div>
-    <h1>Is There a Claudeforce for HubSpot?</h1>
+    <h1>
+      <span class="hero-line1"><span class="typewriter" id="tw1"></span></span>
+      <span class="hero-line2"><span class="typewriter" id="tw2"></span></span>
+    </h1>
     <p class="sub">Claudeforce gives Salesforce sellers 37 prebuilt AI skills inside Claude. HubSpot doesn't get it. Here's what Claudeforce actually is, what's Salesforce-locked, and how to build the equivalent on HubSpot.</p>
   </div>
 </section>
@@ -261,5 +279,34 @@
   </div>
 </footer>
 <script src="/assets/nav.js" defer></script>
+<script>
+(function(){
+  function typewrite(el, text, speed, cb) {
+    var i = 0;
+    function tick() {
+      if (i <= text.length) {
+        el.textContent = text.slice(0, i);
+        i++;
+        setTimeout(tick, speed);
+      } else {
+        el.classList.add('done');
+        if (cb) cb();
+      }
+    }
+    tick();
+  }
+  setTimeout(function(){
+    typewrite(document.getElementById('tw1'), 'Is There a Claudeforce', 40, function(){
+      var line2 = document.querySelector('.hero-line2');
+      line2.classList.add('typing');
+      setTimeout(function(){
+        typewrite(document.getElementById('tw2'), 'for HubSpot?', 55, function(){
+          document.querySelector('.hero .sub').classList.add('visible');
+        });
+      }, 300);
+    });
+  }, 400);
+})();
+</script>
 </body>
 </html>
