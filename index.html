@@ -68,6 +68,17 @@
   .stack-note{margin-top:24px;font-size:14px;color:var(--muted);font-style:italic;}
   @media(max-width:900px){.stack-grid{grid-template-columns:repeat(3,1fr);}}
   @media(max-width:640px){.stack-grid{grid-template-columns:repeat(2,1fr);}}
+
+  /* Layout fixes */
+  .hero-copy{max-width:80%!important;}
+  #gtm-stack{padding-top:60px;padding-bottom:60px;}
+  .stack-note{margin-bottom:40px;}
+  .outcomes-band{padding-top:20px;}
+  #included .section-title{max-width:900px;}
+  #included .included-grid{margin-bottom:60px;}
+  #credibility{padding-top:60px;padding-bottom:60px;}
+  #credibility .cred-stats{margin-bottom:40px;}
+  #fit{padding-bottom:60px;}
 </style>
 <script>document.documentElement.className+=' js';</script>
 </head>
@@ -126,7 +137,7 @@
         <span class="hero-line2"><span class="tw" id="tw2"></span></span>
         <span class="hero-line3"><span class="tw" id="tw3"></span></span>
       </h1>
-      <p class="sub">OTTO builds and manages AI GTM agents inside HubSpot, Pipedrive, ConnectWise, Autotask, or whatever you're already running. No new software. No DIY plugin. A system that builds it and keeps it running.</p>
+      <p class="sub">OTTO builds and manages AI GTM agents inside the tools your team is already comfortable using including CRM, email, and ERP. No new software. No DIY plugin. A system that builds it and keeps it running.</p>
       <div class="hero-ctas">
         <a href="/book/" class="btn-primary">Book a pit review</a>
         <a href="#how" class="btn-secondary">See how OTTO runs</a>
@@ -154,11 +165,12 @@
     <div class="stack-item"><span class="stack-name">Microsoft 365</span><span class="stack-role">Email &amp; Docs</span></div>
     <div class="stack-item"><span class="stack-name">Google Workspace</span><span class="stack-role">Email &amp; Docs</span></div>
   </div>
-  <p class="stack-note">Plus the rest of your stack. If it has an API, we can build agents around it.</p>
+  <p class="stack-note">Plus the rest of your stack. If it has an API, MCP, or webhooks, we can build agents around it.</p>
 </section>
 
 <section class="outcomes-band">
   <div class="wrap">
+    <div class="section-tag"><span class="line"></span><span class="txt">Solutions</span></div>
     <div class="outcomes-grid">
       <a href="/solutions/more-leads/" class="outcome-tile tile-1">
         <div class="outcome-idx">/ 01</div>
@@ -378,6 +390,16 @@
   </div>
 </section>
 
+<section class="wrap" style="padding-top:80px;padding-bottom:40px;">
+  <div class="section-tag"><span class="line"></span><span class="txt">From the blog</span></div>
+  <h2 class="section-title">Latest writing</h2>
+  <div class="post-grid" style="margin-top:32px;">
+<a class="post-card" href="/blog/claudeforce-for-hubspot/"><div class="meta">5 Sep 2026</div><h3>Is There a Claudeforce for HubSpot?</h3><p>Claudeforce gives Salesforce sellers 37 prebuilt AI skills inside Claude. Here's what it actually is, what's Salesforce-locked, and how to build the equivalent on HubSpot.</p><span class="go">Read it &rarr;</span></a>
+<a class="post-card" href="/blog/salesforce-claude-hubspot/"><div class="meta">4 Sep 2026</div><h3>Salesforce Just Got Claude Built In. Here's What That Means If You Run HubSpot.</h3><p>An accurate read of what Claudeforce does, and what the equivalent looks like if HubSpot is your system of record.</p><span class="go">Read it &rarr;</span></a>
+<a class="post-card" href="/blog/salesforce-claude-pipedrive/"><div class="meta">4 Sep 2026</div><h3>Salesforce Just Got Claude Built In. Here's What That Means If You Run Pipedrive.</h3><p>What Claudeforce actually shipped, and what the equivalent depth looks like for teams who chose Pipedrive.</p><span class="go">Read it &rarr;</span></a>
+  </div>
+</section>
+
 <section id="credibility" class="wrap">
   <div class="cred reveal">
     <p>OTTO is the infrastructure layer for your GTM agents, not a project you hire out and not software you log into. <strong>The team has carried sales and revenue leadership roles</strong> across enterprise B2B before building the systems that keep agents running in production.</p>
@@ -463,10 +485,12 @@
   </div>
 </section>
 
-<section class="final wrap" id="cta">
+<section class="final" id="cta">
+  <div class="wrap">
   <h2>Ready to put a pit crew on your GTM agents?</h2>
   <p>20 minutes. We look at what you've already built or tried, and tell you honestly whether OTTO is a fit.</p>
   <a href="/book/" class="btn-primary">Book a pit review</a>
+  </div>
 </section>
 </main>
 <footer>
@@ -547,7 +571,7 @@
     tw(document.getElementById('tw1'),'You already picked the tools.',40,function(){
       document.querySelector('.hero-line2').classList.add('typing');
       setTimeout(function(){
-        tw(document.getElementById('tw2'),'We use AI to make them work together',35,function(){
+        tw(document.getElementById('tw2'),'We use AI to make them work together.',35,function(){
           document.querySelector('.hero-line3').classList.add('typing');
           setTimeout(function(){
             tw(document.getElementById('tw3'),'(Then we make sure nothing breaks)',30,function(){
