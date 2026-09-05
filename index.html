@@ -52,6 +52,9 @@
   .hero h1 .hero-line2.typing{opacity:1;}
   .hero h1 .hero-line2 .tw{border-right-color:var(--gold);}
   .hero h1 .hero-line2{color:var(--gold-bright);}
+  .hero h1 .hero-line3{display:block;opacity:0;font-weight:400;font-size:clamp(18px,2.4vw,28px);color:var(--muted);margin-top:8px;}
+  .hero h1 .hero-line3.typing{opacity:1;}
+  .hero h1 .hero-line3 .tw{border-right-color:var(--muted);}
   @keyframes tw-blink{50%{border-color:transparent;}}
   .hero p.sub,.hero .hero-ctas{opacity:0;transition:opacity 0.6s ease;}
   .hero p.sub.vis,.hero .hero-ctas.vis{opacity:1;}
@@ -78,10 +81,10 @@
       <div class="navdrop">
         <a href="/platforms/" class="navdrop-trigger" aria-haspopup="true" aria-expanded="false">Platforms<svg class="chev" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <div class="navdrop-menu">
+          <a href="/platforms/">Not on Salesforce?<span class="d">GTM agents for the CRM you already chose</span></a>
           <a href="/platforms/hubspot/">HubSpot<span class="d">Agents built inside your HubSpot instance</span></a>
           <a href="/platforms/pipedrive/">Pipedrive<span class="d">Agents built inside your Pipedrive pipeline</span></a>
           <a href="/platforms/connectwise-autotask/">ConnectWise &amp; Autotask<span class="d">Agents across your PSA and the CRM beside it</span></a>
-          <a href="/platforms/">All platforms<span class="d">Everything else we build into</span></a>
         </div>
       </div>
       <a href="/#how">How it works</a>
@@ -105,11 +108,12 @@
       <div class="hero-index">
         <span class="num">/ 01</span>
         <span class="line"></span>
-        <span class="txt">AI and agents for GTM teams that don't use Salesforce</span>
+        <span class="txt">Managed AI agent infrastructure</span>
       </div>
       <h1>
         <span class="hero-line1"><span class="tw" id="tw1"></span></span>
         <span class="hero-line2"><span class="tw" id="tw2"></span></span>
+        <span class="hero-line3"><span class="tw" id="tw3"></span></span>
       </h1>
       <p class="sub">OTTO builds and manages AI GTM agents inside HubSpot, Pipedrive, ConnectWise, Autotask, or whatever you're already running. No new software. No DIY plugin. A system that builds it and keeps it running.</p>
       <div class="hero-ctas">
@@ -501,7 +505,7 @@
         <a href="/platforms/hubspot/">HubSpot</a>
         <a href="/platforms/pipedrive/">Pipedrive</a>
         <a href="/platforms/connectwise-autotask/">ConnectWise &amp; Autotask</a>
-        <a href="/platforms/">All platforms</a>
+        <a href="/platforms/">Not on Salesforce?</a>
       </div>
       <div class="foot-col">
         <h4>OTTO</h4>
@@ -549,13 +553,19 @@
     tick();
   }
   setTimeout(function(){
-    twType(document.getElementById('tw1'), 'GTM Agents and Automation', 40, function(){
-      var l2 = document.querySelector('.hero-line2');
-      l2.classList.add('typing');
+    twType(document.getElementById(‘tw1’), ‘You already picked the tools.’, 40, function(){
+      var l2 = document.querySelector(‘.hero-line2’);
+      l2.classList.add(‘typing’);
       setTimeout(function(){
-        twType(document.getElementById('tw2'), "for businesses that don’t use Salesforce", 35, function(){
-          document.querySelector('.hero p.sub').classList.add('vis');
-          setTimeout(function(){ document.querySelector('.hero .hero-ctas').classList.add('vis'); }, 200);
+        twType(document.getElementById(‘tw2’), ‘We use AI to make them work together’, 35, function(){
+          var l3 = document.querySelector(‘.hero-line3’);
+          l3.classList.add(‘typing’);
+          setTimeout(function(){
+            twType(document.getElementById(‘tw3’), ‘(Then we make sure nothing breaks)’, 30, function(){
+              document.querySelector(‘.hero p.sub’).classList.add(‘vis’);
+              setTimeout(function(){ document.querySelector(‘.hero .hero-ctas’).classList.add(‘vis’); }, 200);
+            });
+          }, 400);
         });
       }, 300);
     });
