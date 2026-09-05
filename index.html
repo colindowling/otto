@@ -55,6 +55,16 @@
   @keyframes tw-blink{50%{border-color:transparent;}}
   .hero p.sub,.hero .hero-ctas{opacity:0;transition:opacity 0.6s ease;}
   .hero p.sub.vis,.hero .hero-ctas.vis{opacity:1;}
+
+  /* GTM Stack grid */
+  .stack-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border-subtle);margin-top:40px;}
+  .stack-item{background:var(--bg-primary);padding:28px 24px;transition:background 0.3s ease;}
+  .stack-item:hover{background:var(--bg-tertiary);}
+  .stack-name{display:block;font-family:'Space Grotesk',sans-serif;font-size:1.1rem;font-weight:600;color:var(--off-white);margin-bottom:4px;}
+  .stack-role{display:block;font-size:0.75rem;color:var(--muted);letter-spacing:0.04em;text-transform:uppercase;}
+  .stack-note{margin-top:24px;font-size:14px;color:var(--muted);font-style:italic;}
+  @media(max-width:900px){.stack-grid{grid-template-columns:repeat(3,1fr);}}
+  @media(max-width:640px){.stack-grid{grid-template-columns:repeat(2,1fr);}}
 </style>
 <script>document.documentElement.className+=' js';</script>
 </head>
@@ -75,11 +85,11 @@
         </div>
       </div>
       <a href="/#how">How it works</a>
-      <a href="/build-vs-managed/">Build vs. Managed</a>
       <a href="/pricing/">Pricing</a>
       <div class="navdrop">
         <button type="button" class="navdrop-trigger" aria-haspopup="true" aria-expanded="false">Resources<svg class="chev" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         <div class="navdrop-menu">
+          <a href="/build-vs-managed/">Build vs. Managed<span class="d">When to build yourself vs. have it managed</span></a>
           <a href="/blog/">Blog<span class="d">Notes on operating agents in production</span></a>
           <a href="/faq/">FAQ<span class="d">Scope, pricing, security and governance</span></a>
         </div>
@@ -211,6 +221,28 @@
   <div class="wrap">
     <p class="quote-text"><span class="rline">You can </span><span class="rline">vibe code</span><span class="rline"> any GTM agent you want. But you can't vibe code </span><span class="rline gold">scalable growth</span><span class="rline">.</span><span class="final-line">That's where OTTO comes in.</span></p>
   </div>
+</section>
+
+<section id="stack" class="wrap">
+  <div class="section-tag"><span class="line"></span><span class="txt">Your GTM stack</span></div>
+  <h2 class="section-title">You already picked the right tools. We make them work together.</h2>
+  <p class="section-sub">There are dozens of great GTM tools available today, and you've spent years building on the ones that fit your team. Your HubSpot records. Your M365 emails and documents. Your enrichment data and conversation history. Re-platforming to a new AI-native CRM or AI-enabled email system doesn't make sense when your data and workflows already live somewhere good. OTTO builds agents that work across the stack you already run, not instead of it.</p>
+
+  <div class="stack-grid reveal">
+    <div class="stack-item"><span class="stack-name">HubSpot</span><span class="stack-role">CRM</span></div>
+    <div class="stack-item"><span class="stack-name">Pipedrive</span><span class="stack-role">CRM</span></div>
+    <div class="stack-item"><span class="stack-name">ConnectWise</span><span class="stack-role">PSA</span></div>
+    <div class="stack-item"><span class="stack-name">Autotask</span><span class="stack-role">PSA</span></div>
+    <div class="stack-item"><span class="stack-name">Clay</span><span class="stack-role">Enrichment</span></div>
+    <div class="stack-item"><span class="stack-name">Apollo</span><span class="stack-role">Prospecting</span></div>
+    <div class="stack-item"><span class="stack-name">Gong</span><span class="stack-role">Conversation Intelligence</span></div>
+    <div class="stack-item"><span class="stack-name">Instantly</span><span class="stack-role">Cold Email</span></div>
+    <div class="stack-item"><span class="stack-name">HeyReach</span><span class="stack-role">LinkedIn Outbound</span></div>
+    <div class="stack-item"><span class="stack-name">Slack</span><span class="stack-role">Communication</span></div>
+    <div class="stack-item"><span class="stack-name">Microsoft 365</span><span class="stack-role">Email &amp; Docs</span></div>
+    <div class="stack-item"><span class="stack-name">Google Workspace</span><span class="stack-role">Email &amp; Docs</span></div>
+  </div>
+  <p class="stack-note">Plus the rest of your stack. If it has an API, we can build agents around it.</p>
 </section>
 
 <section id="how" class="soft">
