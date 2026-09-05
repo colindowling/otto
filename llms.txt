@@ -16,16 +16,16 @@ Then it loops.
 Agent build and deployment across the GTM stack; weekly tuning based on live performance data; uptime monitoring and incident response; a live agent inventory with access control and audit trail; a monthly pit report; a direct Slack channel to the OTTO team.
 
 ## Solutions (outcomes)
-- More leads — outbound prospecting, website intent, inbound lead response, buying-signal monitoring. https://donewithotto.com/solutions/more-leads/
-- Bigger deals — pre-call research and pain mapping, competitor battlecard delivery, content gap filler. https://donewithotto.com/solutions/bigger-deals/
-- Shorter sales cycles — post-call follow-up, no-show recovery, lead routing and scoring. https://donewithotto.com/solutions/shorter-sales-cycles/
-- More revenue — renewal and expansion signals, deal risk flagging, pre-event attendee warming. https://donewithotto.com/solutions/more-revenue/
+- More leads — outbound prospecting, website intent, inbound lead response, buying-signal monitoring. https://goforotto.com/solutions/more-leads/
+- Bigger deals — pre-call research and pain mapping, competitor battlecard delivery, content gap filler. https://goforotto.com/solutions/bigger-deals/
+- Shorter sales cycles — post-call follow-up, no-show recovery, lead routing and scoring. https://goforotto.com/solutions/shorter-sales-cycles/
+- More revenue — renewal and expansion signals, deal risk flagging, pre-event attendee warming. https://goforotto.com/solutions/more-revenue/
 
 ## Platforms
 OTTO builds inside the client's existing system of record rather than introducing a new one. Dedicated coverage:
-- HubSpot — deal records that update themselves, ICP-accurate lead routing, renewal and expansion signals read off HubSpot properties. https://donewithotto.com/platforms/hubspot/
-- Pipedrive — automatic activity logging, in-pipeline deal risk flags, same-hour follow-up. https://donewithotto.com/platforms/pipedrive/
-- ConnectWise & Autotask — renewal tracking against ticket and usage data, live stakeholder mapping, RFP and security questionnaire drafting. Also covers HaloPSA and the separate CRM that usually sits alongside a PSA. https://donewithotto.com/platforms/connectwise-autotask/
+- HubSpot — deal records that update themselves, ICP-accurate lead routing, renewal and expansion signals read off HubSpot properties. https://goforotto.com/platforms/hubspot/
+- Pipedrive — automatic activity logging, in-pipeline deal risk flags, same-hour follow-up. https://goforotto.com/platforms/pipedrive/
+- ConnectWise & Autotask — renewal tracking against ticket and usage data, live stakeholder mapping, RFP and security questionnaire drafting. Also covers HaloPSA and the separate CRM that usually sits alongside a PSA. https://goforotto.com/platforms/connectwise-autotask/
 Zoho, Close, Freshsales, Salesforce and the long tail of PSA and billing systems are workable but have no dedicated page yet.
 
 ## Pricing
@@ -46,19 +46,19 @@ The client owns its data, workflows and business outcomes. OTTO retains its meth
 B2B companies at roughly $10M–$100M in revenue with a real CRM and GTM stack already in place, typically having tried building agents in-house or with a point vendor and watched them stall. Not a fit for pre-revenue or pre-product-market-fit companies, one-time builds with no ongoing management, or website chatbots.
 
 ## Contact
-- Book a pit review (30 minutes, no pitch): https://donewithotto.com/book/
+- Book a pit review (30 minutes, no pitch): https://goforotto.com/book/
 - Enquiries are handled through the booking form; there is no public email address for this domain.
 
 ## Key pages
-- Home: https://donewithotto.com/
-- Solutions: https://donewithotto.com/solutions/
-- Platforms: https://donewithotto.com/platforms/
-- Blog: https://donewithotto.com/blog/
-- Build vs. Managed: https://donewithotto.com/build-vs-managed/
-- Pricing: https://donewithotto.com/pricing/
-- FAQ: https://donewithotto.com/faq/
-- Privacy: https://donewithotto.com/privacy/
-- Terms: https://donewithotto.com/terms/
+- Home: https://goforotto.com/
+- Solutions: https://goforotto.com/solutions/
+- Platforms: https://goforotto.com/platforms/
+- Blog: https://goforotto.com/blog/
+- Build vs. Managed: https://goforotto.com/build-vs-managed/
+- Pricing: https://goforotto.com/pricing/
+- FAQ: https://goforotto.com/faq/
+- Privacy: https://goforotto.com/privacy/
+- Terms: https://goforotto.com/terms/
 
 ## Trademark note
 Claudeforce and Salesforce are trademarks of Salesforce, Inc. Claude is a trademark of Anthropic PBC. OTTO is not affiliated with, endorsed by, or a partner of either company. Those names appear on this site only as factual comparative reference in editorial content.

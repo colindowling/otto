@@ -1,4 +1,4 @@
-# OTTO / donewithotto.com
+# OTTO / goforotto.com
 #
 # Crawling is open. Automated crawlers, SEO auditors, and AI/LLM agents
 # are all permitted. See /llms.txt for content-usage guidance.
@@ -8,4 +8,4 @@ Allow: /
 
 LLM-Policy: /llms.txt
 
-Sitemap: https://donewithotto.com/sitemap.xml
+Sitemap: https://goforotto.com/sitemap.xml
