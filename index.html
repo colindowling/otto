@@ -63,8 +63,8 @@
   .stack-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border-subtle);margin-top:40px;}
   .stack-item{background:var(--bg-primary);padding:28px 24px;transition:background 0.3s ease;}
   .stack-item:hover{background:var(--bg-tertiary);}
-  .stack-name{display:block;font-family:'Space Grotesk',sans-serif;font-size:1.1rem;font-weight:600;color:var(--off-white);margin-bottom:4px;}
-  .stack-role{display:block;font-size:0.75rem;color:var(--muted);letter-spacing:0.04em;text-transform:uppercase;}
+  .stack-name{display:block;font-family:'Space Grotesk',sans-serif;font-size:1.1rem;font-weight:600;color:#ffffff;margin-bottom:4px;}
+  .stack-role{display:block;font-size:0.75rem;color:rgba(255,255,255,0.55);letter-spacing:0.04em;text-transform:uppercase;}
   .stack-note{margin-top:24px;font-size:14px;color:var(--muted);font-style:italic;}
   @media(max-width:900px){.stack-grid{grid-template-columns:repeat(3,1fr);}}
   @media(max-width:640px){.stack-grid{grid-template-columns:repeat(2,1fr);}}
@@ -122,6 +122,28 @@
       </div>
     </div>
   </div>
+</section>
+
+<section id="gtm-stack" class="wrap">
+  <div class="section-tag"><span class="line"></span><span class="txt">Your GTM stack</span></div>
+  <h2 class="section-title">You already picked the right tools. We make them work together.</h2>
+  <p class="section-sub">There are dozens of great GTM tools available today, and you've spent years building on the ones that fit your team. Your HubSpot records. Your M365 emails and documents. Your enrichment data and conversation history. Re-platforming to a new AI-native CRM or AI-enabled email system doesn't make sense when your data and workflows already live somewhere good. OTTO builds agents that work across the stack you already run, not instead of it.</p>
+
+  <div class="stack-grid reveal">
+    <div class="stack-item"><span class="stack-name">HubSpot</span><span class="stack-role">CRM</span></div>
+    <div class="stack-item"><span class="stack-name">Pipedrive</span><span class="stack-role">CRM</span></div>
+    <div class="stack-item"><span class="stack-name">ConnectWise</span><span class="stack-role">PSA</span></div>
+    <div class="stack-item"><span class="stack-name">Autotask</span><span class="stack-role">PSA</span></div>
+    <div class="stack-item"><span class="stack-name">Clay</span><span class="stack-role">Enrichment</span></div>
+    <div class="stack-item"><span class="stack-name">Apollo</span><span class="stack-role">Prospecting</span></div>
+    <div class="stack-item"><span class="stack-name">Gong</span><span class="stack-role">Conversation Intelligence</span></div>
+    <div class="stack-item"><span class="stack-name">Instantly</span><span class="stack-role">Cold Email</span></div>
+    <div class="stack-item"><span class="stack-name">HeyReach</span><span class="stack-role">LinkedIn Outbound</span></div>
+    <div class="stack-item"><span class="stack-name">Slack</span><span class="stack-role">Communication</span></div>
+    <div class="stack-item"><span class="stack-name">Microsoft 365</span><span class="stack-role">Email &amp; Docs</span></div>
+    <div class="stack-item"><span class="stack-name">Google Workspace</span><span class="stack-role">Email &amp; Docs</span></div>
+  </div>
+  <p class="stack-note">Plus the rest of your stack. If it has an API, we can build agents around it.</p>
 </section>
 
 <section class="outcomes-band">
@@ -205,21 +227,7 @@
   </div>
 </section>
 
-<section id="problem" class="wrap">
-  <div class="section-tag"><span class="line"></span><span class="txt">Agent sprawl</span></div>
-  <h2 class="section-title">Welcome to agent sprawl.</h2>
-  <p class="section-sub">Someone on the team built an agent. It worked, so they built a few more. A few months later nobody can say how many are running, what they can access, or whether they still work. That's agent sprawl, and it's quietly becoming the default state of GTM teams that move fast on AI without anyone operating what gets built.</p>
 
-  <div class="problem-grid reveal">
-    <div class="problem-card"><div class="idx">/ 01</div><h3>Sprawl sets in fast</h3><p>A rep builds one agent. A marketer builds two more. Within months nobody has a full inventory of what's running or who owns it.</p></div>
-    <div class="problem-card"><div class="idx">/ 02</div><h3>Shadow AI multiplies</h3><p>Agents get spun up in tools nobody approved, holding CRM and API access nobody reviewed.</p></div>
-    <div class="problem-card"><div class="idx">/ 03</div><h3>It breaks on an API change</h3><p>A CRM field gets renamed, a vendor updates their API, and the agent fails silently for weeks before anyone notices.</p></div>
-    <div class="problem-card"><div class="idx">/ 04</div><h3>Reps stop trusting it</h3><p>One bad lead score or one wrong email and the team quietly routes around it for good.</p></div>
-    <div class="problem-card"><div class="idx">/ 05</div><h3>It never gets tuned</h3><p>The logic that worked at launch doesn't hold up once your ICP, product, or team changes. Nobody goes back in.</p></div>
-    <div class="problem-card"><div class="idx">/ 06</div><h3>Nobody owns governance or security</h3><p>No access review, no audit trail, no kill switch. If something goes wrong, nobody can say what the agent actually touched.</p></div>
-  </div>
-  <p style="margin-top:28px;font-size:15px;color:var(--muted);">Already have agents running in Claude, Cursor, or your own automation stack? <a href="/build-vs-managed/" style="color:var(--gold);font-weight:600;">See why that's not the same as being covered →</a></p>
-</section>
 
 <section class="quote-band">
   <div class="wrap">
@@ -227,27 +235,7 @@
   </div>
 </section>
 
-<section id="stack" class="wrap">
-  <div class="section-tag"><span class="line"></span><span class="txt">Your GTM stack</span></div>
-  <h2 class="section-title">You already picked the right tools. We make them work together.</h2>
-  <p class="section-sub">There are dozens of great GTM tools available today, and you've spent years building on the ones that fit your team. Your HubSpot records. Your M365 emails and documents. Your enrichment data and conversation history. Re-platforming to a new AI-native CRM or AI-enabled email system doesn't make sense when your data and workflows already live somewhere good. OTTO builds agents that work across the stack you already run, not instead of it.</p>
 
-  <div class="stack-grid reveal">
-    <div class="stack-item"><span class="stack-name">HubSpot</span><span class="stack-role">CRM</span></div>
-    <div class="stack-item"><span class="stack-name">Pipedrive</span><span class="stack-role">CRM</span></div>
-    <div class="stack-item"><span class="stack-name">ConnectWise</span><span class="stack-role">PSA</span></div>
-    <div class="stack-item"><span class="stack-name">Autotask</span><span class="stack-role">PSA</span></div>
-    <div class="stack-item"><span class="stack-name">Clay</span><span class="stack-role">Enrichment</span></div>
-    <div class="stack-item"><span class="stack-name">Apollo</span><span class="stack-role">Prospecting</span></div>
-    <div class="stack-item"><span class="stack-name">Gong</span><span class="stack-role">Conversation Intelligence</span></div>
-    <div class="stack-item"><span class="stack-name">Instantly</span><span class="stack-role">Cold Email</span></div>
-    <div class="stack-item"><span class="stack-name">HeyReach</span><span class="stack-role">LinkedIn Outbound</span></div>
-    <div class="stack-item"><span class="stack-name">Slack</span><span class="stack-role">Communication</span></div>
-    <div class="stack-item"><span class="stack-name">Microsoft 365</span><span class="stack-role">Email &amp; Docs</span></div>
-    <div class="stack-item"><span class="stack-name">Google Workspace</span><span class="stack-role">Email &amp; Docs</span></div>
-  </div>
-  <p class="stack-note">Plus the rest of your stack. If it has an API, we can build agents around it.</p>
-</section>
 
 <section id="how" class="soft">
   <div class="wrap">
@@ -337,22 +325,7 @@
   </div>
 </section>
 
-<section id="stack">
-  <div class="wrap">
-    <div class="section-tag"><span class="line"></span><span class="txt">Works with your stack</span></div>
-    <h2 class="section-title">Built inside what you already run.</h2>
-    <p class="section-sub">Agents get built into your system of record, not bolted alongside it. These are the platforms with a dedicated page so far. The rest of the long tail is workable too.</p>
-    <!-- LOGOS: swap each wordmark for the vendor's official SVG once asset usage is confirmed. The grayscale-to-colour hover is already wired. -->
-    <div class="stack-strip reveal">
-      <a class="stack-item" href="/platforms/hubspot/">HubSpot</a>
-      <a class="stack-item" href="/platforms/pipedrive/">Pipedrive</a>
-      <a class="stack-item" href="/platforms/connectwise-autotask/">ConnectWise</a>
-      <a class="stack-item" href="/platforms/connectwise-autotask/">Autotask</a>
-      <span class="stack-item is-static">Salesforce<span class="sub">First-party now</span></span>
-    </div>
-    <p class="stack-note">Salesforce teams have a first-party option as of August 2026, and that's genuinely good for them. <a href="/build-vs-managed/">The operating problem doesn't go away either way</a>. Running something else? <a href="/platforms/">See all platforms</a>.</p>
-  </div>
-</section>
+
 
 <section class="photo-strip">
   <div class="strip-grid">
@@ -543,39 +516,39 @@
   }, { threshold: 0.12 });
   revealEls.forEach(el => io.observe(el));
 
-  /* Typewriter hero */
-  function twType(el, text, speed, cb) {
-    var i = 0;
-    function tick() {
-      if (i <= text.length) { el.textContent = text.slice(0, i); i++; setTimeout(tick, speed); }
-      else { el.classList.add('done'); if (cb) cb(); }
-    }
-    tick();
-  }
-  setTimeout(function(){
-    twType(document.getElementById(‘tw1’), ‘You already picked the tools.’, 40, function(){
-      var l2 = document.querySelector(‘.hero-line2’);
-      l2.classList.add(‘typing’);
-      setTimeout(function(){
-        twType(document.getElementById(‘tw2’), ‘We use AI to make them work together’, 35, function(){
-          var l3 = document.querySelector(‘.hero-line3’);
-          l3.classList.add(‘typing’);
-          setTimeout(function(){
-            twType(document.getElementById(‘tw3’), ‘(Then we make sure nothing breaks)’, 30, function(){
-              document.querySelector(‘.hero p.sub’).classList.add(‘vis’);
-              setTimeout(function(){ document.querySelector(‘.hero .hero-ctas’).classList.add(‘vis’); }, 200);
-            });
-          }, 400);
-        });
-      }, 300);
-    });
-  }, 400);
-
   const quoteSpans = document.querySelectorAll('.quote-text .rline, .quote-text .final-line');
   const qio = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); qio.unobserve(e.target); } });
   }, { threshold: 0.6 });
   quoteSpans.forEach(el => qio.observe(el));
+</script>
+<script>
+/* Typewriter hero — isolated block */
+(function(){
+  function tw(el,text,speed,cb){
+    var i=0;
+    (function tick(){
+      if(i<=text.length){el.textContent=text.slice(0,i);i++;setTimeout(tick,speed);}
+      else{el.classList.add('done');if(cb)cb();}
+    })();
+  }
+  setTimeout(function(){
+    tw(document.getElementById('tw1'),'You already picked the tools.',40,function(){
+      document.querySelector('.hero-line2').classList.add('typing');
+      setTimeout(function(){
+        tw(document.getElementById('tw2'),'We use AI to make them work together',35,function(){
+          document.querySelector('.hero-line3').classList.add('typing');
+          setTimeout(function(){
+            tw(document.getElementById('tw3'),'(Then we make sure nothing breaks)',30,function(){
+              document.querySelector('.hero p.sub').classList.add('vis');
+              setTimeout(function(){document.querySelector('.hero .hero-ctas').classList.add('vis');},200);
+            });
+          },400);
+        });
+      },300);
+    });
+  },400);
+})();
 </script>
 <script src="/assets/nav.js" defer></script>
 </body>
