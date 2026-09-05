@@ -59,15 +59,15 @@
   .hero p.sub,.hero .hero-ctas{opacity:0;transition:opacity 0.6s ease;}
   .hero p.sub.vis,.hero .hero-ctas.vis{opacity:1;}
 
-  /* GTM Stack grid */
-  .stack-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border-subtle);margin-top:40px;}
-  .stack-item{background:var(--bg-primary);padding:28px 24px;transition:background 0.3s ease;}
-  .stack-item:hover{background:var(--bg-tertiary);}
-  .stack-name{display:block;font-family:'Space Grotesk',sans-serif;font-size:1.1rem;font-weight:600;color:#ffffff;margin-bottom:4px;}
-  .stack-role{display:block;font-size:0.75rem;color:rgba(255,255,255,0.55);letter-spacing:0.04em;text-transform:uppercase;}
+  /* GTM Stack logo grid */
+  .stack-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;background:var(--border-subtle);margin-top:40px;}
+  .stack-logo{background:var(--charcoal-2);padding:24px 20px;display:flex;align-items:center;justify-content:center;transition:background 0.3s ease;}
+  .stack-logo:hover{background:var(--charcoal-3);}
+  .stack-logo img{max-width:140px;max-height:40px;width:auto;height:auto;filter:grayscale(1) brightness(10) contrast(0.6);opacity:0.7;transition:filter 0.3s ease,opacity 0.3s ease;}
+  .stack-logo:hover img{filter:none;opacity:1;}
   .stack-note{margin-top:24px;font-size:14px;color:var(--muted);font-style:italic;}
-  @media(max-width:900px){.stack-grid{grid-template-columns:repeat(3,1fr);}}
-  @media(max-width:640px){.stack-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:900px){.stack-grid{grid-template-columns:repeat(4,1fr);}}
+  @media(max-width:640px){.stack-grid{grid-template-columns:repeat(3,1fr);}}
 
   /* Layout fixes */
   .hero-copy{max-width:80%!important;}
@@ -153,22 +153,20 @@
   <p class="section-sub">There are dozens of great GTM tools available today, and you've spent years building on the ones that fit your team. Your HubSpot records. Your M365 emails and documents. Your enrichment data and conversation history. Re-platforming to a new AI-native CRM or AI-enabled email system doesn't make sense when your data and workflows already live somewhere good. OTTO builds agents that work across the stack you already run, not instead of it.</p>
 
   <div class="stack-grid reveal">
-    <div class="stack-item"><span class="stack-name">HubSpot</span><span class="stack-role">CRM</span></div>
-    <div class="stack-item"><span class="stack-name">Pipedrive</span><span class="stack-role">CRM</span></div>
-    <div class="stack-item"><span class="stack-name">ConnectWise</span><span class="stack-role">PSA</span></div>
-    <div class="stack-item"><span class="stack-name">Autotask</span><span class="stack-role">PSA</span></div>
-    <div class="stack-item"><span class="stack-name">Clay</span><span class="stack-role">Enrichment</span></div>
-    <div class="stack-item"><span class="stack-name">Apollo</span><span class="stack-role">Prospecting</span></div>
-    <div class="stack-item"><span class="stack-name">Gong</span><span class="stack-role">Conversation Intelligence</span></div>
-    <div class="stack-item"><span class="stack-name">Instantly</span><span class="stack-role">Cold Email</span></div>
-    <div class="stack-item"><span class="stack-name">HeyReach</span><span class="stack-role">LinkedIn Outbound</span></div>
-    <div class="stack-item"><span class="stack-name">Slack</span><span class="stack-role">Communication</span></div>
-    <div class="stack-item"><span class="stack-name">Microsoft 365</span><span class="stack-role">Email &amp; Docs</span></div>
-    <div class="stack-item"><span class="stack-name">Google Workspace</span><span class="stack-role">Email &amp; Docs</span></div>
-    <div class="stack-item"><span class="stack-name">Chorus</span><span class="stack-role">Conversation Intelligence</span></div>
-    <div class="stack-item"><span class="stack-name">Klue</span><span class="stack-role">Competitive Intelligence</span></div>
-    <div class="stack-item"><span class="stack-name">Fireflies</span><span class="stack-role">Meeting Intelligence</span></div>
-    <div class="stack-item"><span class="stack-name">ZoomInfo</span><span class="stack-role">Data &amp; Prospecting</span></div>
+    <div class="stack-logo"><img src="/assets/logo-hubspot.jpg" alt="HubSpot" loading="lazy"></div>
+    <div class="stack-logo"><img src="/assets/logo-pipedrive.jpg" alt="Pipedrive" loading="lazy"></div>
+    <div class="stack-logo"><img src="/assets/logo-connectwise.jpg" alt="ConnectWise" loading="lazy"></div>
+    <div class="stack-logo"><img src="/assets/logo-salesforce.jpg" alt="Salesforce" loading="lazy"></div>
+    <div class="stack-logo"><img src="/assets/logo-clay.jpg" alt="Clay" loading="lazy"></div>
+    <div class="stack-logo"><img src="/assets/logo-apollo.jpg" alt="Apollo.io" loading="lazy"></div>
+    <div class="stack-logo"><img src="/assets/logo-gong.jpg" alt="Gong" loading="lazy"></div>
+    <div class="stack-logo"><img src="/assets/logo-instantly.jpg" alt="Instantly" loading="lazy"></div>
+    <div class="stack-logo"><img src="/assets/logo-smartlead.jpg" alt="Smartlead" loading="lazy"></div>
+    <div class="stack-logo"><img src="/assets/logo-heyreach.jpg" alt="HeyReach" loading="lazy"></div>
+    <div class="stack-logo"><img src="/assets/logo-chatgpt.jpg" alt="ChatGPT" loading="lazy"></div>
+    <div class="stack-logo"><img src="/assets/logo-claude.jpg" alt="Claude" loading="lazy"></div>
+    <div class="stack-logo"><img src="/assets/logo-fireflies.jpg" alt="Fireflies" loading="lazy"></div>
+    <div class="stack-logo"><img src="/assets/logo-zoominfo.jpg" alt="ZoomInfo" loading="lazy"></div>
   </div>
   <p class="stack-note">Plus the rest of your stack. If it has an API, MCP, or webhooks, we can build agents around it.</p>
 </section>
