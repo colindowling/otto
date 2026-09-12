@@ -52,9 +52,6 @@
   .hero h1 .hero-line2.typing{opacity:1;}
   .hero h1 .hero-line2 .tw{border-right-color:var(--gold);}
   .hero h1 .hero-line2{color:var(--gold-bright);}
-  .hero h1 .hero-line3{display:block;opacity:0;font-weight:400;font-size:clamp(18px,2.4vw,28px);color:var(--muted);margin-top:8px;}
-  .hero h1 .hero-line3.typing{opacity:1;}
-  .hero h1 .hero-line3 .tw{border-right-color:var(--muted);}
   @keyframes tw-blink{50%{border-color:transparent;}}
   .hero p.sub,.hero .hero-ctas{opacity:0;transition:opacity 0.6s ease;}
   .hero p.sub.vis,.hero .hero-ctas.vis{opacity:1;}
@@ -133,9 +130,8 @@
       </div>
       <h1>
         <span class="hero-line1"><span class="tw" id="tw1"></span></span> <span class="hero-line2"><span class="tw" id="tw2"></span></span>
-        <span class="hero-line3"><span class="tw" id="tw3"></span></span>
       </h1>
-      <p class="sub">OTTO builds and manages AI GTM agents inside the tools your team is already comfortable using including CRM, email, and ERP. No new software. No DIY plugin. A system that builds it and keeps it running.</p>
+      <p class="sub">More great leads. Shorter sales cycles. Larger order values. No new software. No DIY plugin. Just a system that builds it and keeps it running.</p>
       <div class="hero-ctas">
         <a href="/book/" class="btn-primary">Book a pit review</a>
         <a href="#how" class="btn-secondary">See how OTTO runs</a>
@@ -564,12 +560,9 @@
       document.querySelector('.hero-line2').classList.add('typing');
       setTimeout(function(){
         tw(document.getElementById('tw2'),'with the tools they already use.',35,function(){
-          document.querySelector('.hero-line3').classList.add('typing');
           setTimeout(function(){
-            tw(document.getElementById('tw3'),'More great leads. Shorter sales cycles. Larger order values.',24,function(){
-              document.querySelector('.hero p.sub').classList.add('vis');
-              setTimeout(function(){document.querySelector('.hero .hero-ctas').classList.add('vis');},200);
-            });
+            document.querySelector('.hero p.sub').classList.add('vis');
+            setTimeout(function(){document.querySelector('.hero .hero-ctas').classList.add('vis');},200);
           },400);
         });
       },300);
