@@ -54,6 +54,24 @@
   .hero-full-bg img{width:100%;height:100%;object-fit:cover;object-position:70% 35%;display:block;filter:grayscale(1) contrast(1.1) brightness(0.8);}
   .hero-full-bg .hgrade{position:absolute;inset:0;background:linear-gradient(100deg, rgba(20,19,17,0.94) 0%, rgba(20,19,17,0.82) 30%, rgba(20,19,17,0.45) 62%, rgba(20,19,17,0.22) 100%);}
   .hero-full-bg .hgrade-bottom{position:absolute;inset:0;background:linear-gradient(0deg, rgba(20,19,17,0.55), transparent 40%);}
+
+  /* hero background texture: blueprint grid + film grain + corner bloom.
+     Pure CSS, no image requests. All three sit at z-index 0; .hero-copy is z-index 1. */
+  .hero-tex,.hero-grain,.hero-glow{position:absolute;inset:0;z-index:0;pointer-events:none;}
+  .hero-tex{
+    background-image:
+      linear-gradient(to right, rgba(124,139,153,0.075) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(124,139,153,0.075) 1px, transparent 1px);
+    background-size:64px 64px;
+    -webkit-mask-image:radial-gradient(110% 90% at 10% 6%, #000 0%, rgba(0,0,0,0.5) 48%, transparent 84%);
+    mask-image:radial-gradient(110% 90% at 10% 6%, #000 0%, rgba(0,0,0,0.5) 48%, transparent 84%);
+  }
+  .hero-grain{
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+    opacity:0.10;mix-blend-mode:overlay;
+  }
+  .hero-glow{background:radial-gradient(62% 74% at 86% 16%, rgba(77,92,107,0.26) 0%, transparent 70%);}
+
   .hero-copy{padding:0;max-width:68%;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:1;min-height:600px;}
   @media (max-width:940px){.hero-copy{padding:20px 0 48px;min-height:auto;max-width:100%;}}
   .hero-index{display:flex;align-items:center;gap:14px;margin-bottom:28px;flex-wrap:wrap;}
