@@ -45,6 +45,9 @@
 ]}
 </script>
 <style>
+  /* Hero H1: each sentence must hold a single line. Sized so the longer line
+     (line 1, 700wt) fits the full hero-copy width at laptop widths and up. */
+  .hero h1{max-width:100%;font-size:clamp(26px,3.3vw,42px);}
   .hero h1 .tw{display:inline;border-right:2px solid var(--off-white);animation:tw-blink 0.8s step-end infinite;}
   .hero h1 .tw.done{border-right-color:transparent;animation:none;}
   .hero h1 .hero-line1{display:block;font-weight:700;color:var(--off-white);}
