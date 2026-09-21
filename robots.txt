@@ -1,4 +1,4 @@
-# OTTO / goforotto.com
+# ANTS / goforotto.com
 #
 # Crawling is open. Automated crawlers, SEO auditors, and AI/LLM agents
 # are all permitted. See /llms.txt for content-usage guidance.
