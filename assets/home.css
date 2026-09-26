@@ -10,9 +10,9 @@
     --muted-dark:#a39c92;
     --border:#e7e2d9;
     --border-dark:rgba(255,255,255,0.11);
-    --gold:#4d5c6b;
-    --gold-bright:#7c8b99;
-    --gold-tint:#eef1f4;
+    --gold:#94652b;
+    --gold-bright:#e0b378;
+    --gold-tint:#f6eee3;
     --off-white:#f2efe9;
     --shadow-sm:0 1px 2px rgba(29,27,25,0.05), 0 2px 8px rgba(29,27,25,0.05);
     --shadow-md:0 4px 16px rgba(29,27,25,0.07), 0 1px 3px rgba(29,27,25,0.06);
@@ -60,8 +60,8 @@
   .hero-tex,.hero-grain,.hero-glow{position:absolute;inset:0;z-index:0;pointer-events:none;}
   .hero-tex{
     background-image:
-      linear-gradient(to right, rgba(124,139,153,0.075) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(124,139,153,0.075) 1px, transparent 1px);
+      linear-gradient(to right, rgba(224,179,120,0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(224,179,120,0.06) 1px, transparent 1px);
     background-size:64px 64px;
     -webkit-mask-image:radial-gradient(110% 90% at 10% 6%, #000 0%, rgba(0,0,0,0.5) 48%, transparent 84%);
     mask-image:radial-gradient(110% 90% at 10% 6%, #000 0%, rgba(0,0,0,0.5) 48%, transparent 84%);
@@ -70,7 +70,7 @@
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
     opacity:0.10;mix-blend-mode:overlay;
   }
-  .hero-glow{background:radial-gradient(62% 74% at 86% 16%, rgba(77,92,107,0.26) 0%, transparent 70%);}
+  .hero-glow{background:radial-gradient(62% 74% at 86% 16%, rgba(224,179,120,0.16) 0%, transparent 70%);}
 
   .hero-copy{padding:0;max-width:68%;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:1;min-height:600px;}
   @media (max-width:940px){.hero-copy{padding:20px 0 48px;min-height:auto;max-width:100%;}}
@@ -86,8 +86,8 @@
   .hero h1 .line.gold.visible{color:var(--gold-bright);}
   .hero p.sub{font-size:17px;color:var(--muted-dark);max-width:540px;margin-bottom:36px;line-height:1.65;}
   .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
-  .btn-primary{background:var(--gold);color:var(--charcoal);font-weight:700;font-size:14px;padding:15px 26px;border-radius:2px;transition:background 0.2s ease, transform 0.15s ease;display:inline-block;}
-  .btn-primary:hover{background:var(--gold-bright);transform:translateY(-1px);}
+  .btn-primary{background:var(--gold-bright);color:var(--charcoal);font-weight:700;font-size:14px;padding:15px 26px;border-radius:2px;transition:background 0.2s ease, transform 0.15s ease;display:inline-block;}
+  .btn-primary:hover{background:#ecc796;transform:translateY(-1px);}
   .btn-secondary{border:1px solid var(--border-dark);color:var(--off-white);font-weight:600;font-size:14px;padding:15px 26px;border-radius:2px;transition:border-color 0.2s ease, background 0.2s ease;display:inline-block;background:transparent;}
   .btn-secondary:hover{border-color:rgba(255,255,255,0.4);background:rgba(255,255,255,0.05);}
   .btn-secondary.on-light{border-color:var(--border);color:var(--ink);}
@@ -289,3 +289,12 @@
   .final{padding:100px 0;background:var(--charcoal);color:var(--off-white);}
   .final h2{font-size:clamp(28px,4.4vw,44px);max-width:640px;margin-bottom:18px;}
   .final p{color:var(--muted-dark);font-size:17px;max-width:520px;margin-bottom:36px;}
+
+/* ANTS brand layer (home) */
+header.on-dark .nav-cta{background:var(--gold-bright);color:var(--charcoal);}
+header.on-dark .nav-cta:hover{background:#ecc796;}
+.hero-full-bg img{filter:none;}
+header.on-dark .navtoggle{border-color:var(--border-dark);}
+header.on-dark .navtoggle span{background:var(--off-white);}
+@media (max-width:940px){.hero-copy{max-width:100%!important;}}
+@media (max-width:640px){header nav{padding:16px 20px;gap:12px;} header .nav-cta{padding:9px 12px;font-size:12px;} .logo .word{width:64px;height:11px;}}

@@ -1,64 +1,66 @@
 # ANTS
 
-> Fully managed AI agent infrastructure for B2B sales and marketing teams that do not run Salesforce. In August 2026 Salesforce and Anthropic shipped a first-party Claude integration for Salesforce sellers. No equivalent exists for HubSpot, Pipedrive, ConnectWise, Autotask or HaloPSA. ANTS is that layer for everyone else: agents built directly into the CRM or PSA a client already runs, then tuned, monitored and governed every week. Not software you log into, and not a project that ends at launch. Tagline: agents deployed, agents operated.
+> Managed AI agent colonies for the work that falls through the cracks. One agent breaks. A colony doesn't. ANTS builds and runs independent AI workers, each doing one job well, across the tools a business already uses (CRM, inbox, accounting system, PSA, ticketing queue) in sales, finance and operations, then tunes, monitors and governs them every week. Not software you log into, and not a project that ends at launch. Tagline: Independent workers. One colony. Nothing falls through.
 
 ## The problem ANTS addresses
-Most teams can build an agent. Few can keep one running. Agents get built ad hoc by reps and marketers, then break silently on an API or CRM change, drift out of date as the ICP shifts, and accumulate unreviewed access. ANTS calls this agent sprawl, and the operating layer is what it sells.
+Work doesn't fail all at once. It fails quietly: a lead nobody followed up, an invoice nobody sent, a renewal nobody flagged, a deadline missed, a customer left waiting, an upsell signal nobody noticed. These are failures of coverage, not effort. Separately, most teams can build a single agent but few can keep one running; agents get built ad hoc, break silently, and accumulate unreviewed access (agent sprawl, shadow AI). You can vibe code any single agent. You can't vibe code a colony.
 
 ## How the work runs
-1. Assess what the client already has, improving return on existing tools, technology and people before adding anything.
-2. Prioritize by impact on revenue, profitability and operational effectiveness.
-3. Iterate continuously. New agents and improvements to existing ones are ongoing, not a fixed project scope.
+1. Assess what the client already has — people, tools, and workflows included.
+2. Prioritize by impact: which workers close the widest cracks costing revenue, time, or risk.
+3. Iterate continuously. New workers and improvements to running ones are ongoing.
 4. Manage and maintain in the background: security, resource efficiency, verifiable ROI.
 Then it loops.
 
 ## What every retainer includes
-Agent build and deployment across the GTM stack; weekly tuning based on live performance data; uptime monitoring and incident response; a live agent inventory with access control and audit trail; a monthly pit report; a direct Slack channel to the ANTS team.
+Worker build and deployment across the stack; weekly tuning based on live performance data; uptime monitoring and incident response; a live worker inventory with access control and audit trail; a monthly Colony Report; a direct Slack channel to the ANTS team; built around the team the client already has.
 
-## Solutions (outcomes)
-- More leads — outbound prospecting, website intent, inbound lead response, buying-signal monitoring. https://goforotto.com/solutions/more-leads/
-- Bigger deals — pre-call research and pain mapping, competitor battlecard delivery, content gap filler. https://goforotto.com/solutions/bigger-deals/
-- Shorter sales cycles — post-call follow-up, no-show recovery, lead routing and scoring. https://goforotto.com/solutions/shorter-sales-cycles/
-- More revenue — renewal and expansion signals, deal risk flagging, pre-event attendee warming. https://goforotto.com/solutions/more-revenue/
+## Where ANTS works
+- Sales & Marketing — leads, follow-up, renewals. https://goforotto.com/solutions/sales-marketing/
+- Finance & Ops — invoices, deadlines, compliance. https://goforotto.com/solutions/finance-ops/
+- Falls Through the Cracks https://goforotto.com/solutions/falls-through-the-cracks/
+- Missed Deadlines https://goforotto.com/solutions/missed-deadlines/
+- Customers Left Waiting https://goforotto.com/solutions/customers-left-waiting/
+- Missed Growth https://goforotto.com/solutions/missed-growth/
+- Agent Sprawl, Shadow AI, Governance https://goforotto.com/solutions/agent-governance/
+
+## Example workers
+Sales & Marketing: pre-call research and pain mapping, post-call follow-up, lead routing and scoring, no-show recovery, deal risk flagging, renewal and expansion signals. Finance: invoice and AR follow-up, contract and renewal deadline tracking. Operations: SLA and ticket monitoring, onboarding and compliance tracking.
 
 ## Platforms
-ANTS builds inside the client's existing system of record rather than introducing a new one. Dedicated coverage:
-- HubSpot — deal records that update themselves, ICP-accurate lead routing, renewal and expansion signals read off HubSpot properties. https://goforotto.com/platforms/hubspot/
-- Pipedrive — automatic activity logging, in-pipeline deal risk flags, same-hour follow-up. https://goforotto.com/platforms/pipedrive/
-- ConnectWise & Autotask — renewal tracking against ticket and usage data, live stakeholder mapping, RFP and security questionnaire drafting. Also covers HaloPSA and the separate CRM that usually sits alongside a PSA. https://goforotto.com/platforms/connectwise-autotask/
-Zoho, Close, Freshsales, Salesforce and the long tail of PSA and billing systems are workable but have no dedicated page yet.
+ANTS builds inside the client's existing systems rather than replacing them.
+- HubSpot https://goforotto.com/platforms/hubspot/
+- Pipedrive https://goforotto.com/platforms/pipedrive/
+- ConnectWise & Autotask (also HaloPSA) https://goforotto.com/platforms/connectwise-autotask/
+- Finance & ops tools: QuickBooks, NetSuite, Bill.com, Ramp, Jira, Zendesk, Monday, Slack, plus Clay, Claude, Copilot, ChatGPT for Work, Gong. https://goforotto.com/platforms/other-tools/
+- Not on Salesforce? Salesforce got a first-party Claude integration in 2026; no equivalent exists for HubSpot, Pipedrive, ConnectWise, Autotask or HaloPSA. ANTS is that layer for everyone else. https://goforotto.com/platforms/not-on-salesforce/
+If it has an API, MCP, or webhooks, the colony can work in it.
 
 ## Pricing
-- GTM Agent Blueprint — $6,500 one-time. Required first step. Assessment plus prioritized roadmap. Client keeps the deliverable regardless; 50% credited toward year one on signing a retainer.
-- Foundation — $5,000/mo, 12-month term. 3–4 agents live in the first 30 days, 1 new agent per month after.
-- Growth — $9,500/mo, 12-month term. 8–10 agents live in the first 60 days, 2 new agents per month after.
-- Scale — $17,000/mo, 12-month term. 15+ agents live in the first 90 days, 3 new agents per month after, dedicated pod.
+- The Colony Blueprint — $6,500 one-time. Required first step. Assessment across sales, finance or operations plus a prioritized worker roadmap. Client keeps it regardless; 50% credited toward year one on signing.
+- Outpost — $5,000/mo, 12-month term. 3–4 workers live in the first 30 days, 1 new worker per month after. Best for a single function.
+- Colony — $9,500/mo, 12-month term. 8–10 workers live in the first 60 days, 2 new per month after. Best for a full department.
+- Supercolony — $17,000/mo, 12-month term. 15+ workers live in the first 90 days, 3 new per month after, dedicated pod. Best for multi-department coverage. (A supercolony, in nature, is independent colonies cooperating across a shared territory — Argentine ants are the famous case.)
 - Custom — multi-brand, multi-region or heavily regulated organisations.
-Retainers exclude third-party costs the client owns directly, such as CRM seats, enrichment data, sending infrastructure and model API usage on the client's own accounts.
+Retainers exclude third-party costs the client owns directly, such as software seats, data, sending infrastructure and model API usage on the client's own accounts.
 
 ## Security and governance
-Agents operate inside the client's own systems; ANTS does not copy customer or pipeline data into an ANTS-owned platform. Access is scoped per agent rather than standing administrative access, every agent action is logged, a kill switch is available, and credentials are revoked at the end of an engagement. Client data is not used to train any AI model that leaves the business.
+Workers operate inside the client's own systems; ANTS does not copy customer data into an ANTS-owned platform. Access is scoped per worker, every action is logged, a kill switch is available, and credentials are revoked at the end of an engagement. Client data is not used to train any AI model that leaves the business.
 
 ## Ownership
-The client owns its data, workflows and business outcomes. ANTS retains its methodology, tooling and general know-how. On termination ANTS provides documentation for every agent built, so the client or another provider can continue operating or rebuilding them.
+The client owns its data, workflows and business outcomes. ANTS retains its methodology, tooling and general know-how. On termination ANTS provides documentation for every worker built.
 
 ## Who it is for
-B2B companies at roughly $10M–$100M in revenue with a real CRM and GTM stack already in place, typically having tried building agents in-house or with a point vendor and watched them stall. Not a fit for pre-revenue or pre-product-market-fit companies, one-time builds with no ongoing management, or website chatbots.
+Businesses at roughly $10M–$100M in revenue with real systems already in place across the functions they want covered (a CRM, an accounting platform, a PSA, a ticketing queue), typically having tried building agents in-house or with a point vendor and watched them stall. Not a fit for pre-revenue companies, one-time builds with no ongoing management, or website chatbots.
 
 ## Contact
-- Book a pit review (30 minutes, no pitch): https://goforotto.com/book/
-- Enquiries are handled through the booking form; there is no public email address for this domain.
+- Book a Colony Call (20 minutes): https://goforotto.com/book/
 
 ## Key pages
 - Home: https://goforotto.com/
-- Solutions: https://goforotto.com/solutions/
+- Where We Work: https://goforotto.com/solutions/
 - Platforms: https://goforotto.com/platforms/
-- Blog: https://goforotto.com/blog/
-- Build vs. Managed: https://goforotto.com/build-vs-managed/
 - Pricing: https://goforotto.com/pricing/
+- Build vs. Managed: https://goforotto.com/build-vs-managed/
 - FAQ: https://goforotto.com/faq/
-- Privacy: https://goforotto.com/privacy/
-- Terms: https://goforotto.com/terms/
-
-## Trademark note
-Claudeforce and Salesforce are trademarks of Salesforce, Inc. Claude is a trademark of Anthropic PBC. ANTS is not affiliated with, endorsed by, or a partner of either company. Those names appear on this site only as factual comparative reference in editorial content.
+- Blog: https://goforotto.com/blog/
