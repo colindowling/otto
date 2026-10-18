@@ -58,7 +58,7 @@ Businesses at roughly $10M–$100M in revenue with real systems already in place
 
 ## Key pages
 - Home: https://goforotto.com/
-- Where We Work: https://goforotto.com/solutions/
+- Solutions: https://goforotto.com/solutions/
 - Platforms: https://goforotto.com/platforms/
 - Pricing: https://goforotto.com/pricing/
 - Build vs. Managed: https://goforotto.com/build-vs-managed/

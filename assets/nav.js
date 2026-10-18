@@ -63,7 +63,14 @@
           label.className = 'mg-label';
           label.textContent = trigger ? trigger.textContent.trim() : 'More';
           group.appendChild(label);
-          Array.prototype.forEach.call(node.querySelectorAll('.navdrop-menu a'), function (a) {
+          Array.prototype.forEach.call(node.querySelectorAll('.navdrop-menu a, .navdrop-menu .mlabel'), function (a) {
+            if (a.classList.contains('mlabel')) {
+              var sub = document.createElement('div');
+              sub.className = 'mg-sub';
+              sub.textContent = a.textContent.trim();
+              group.appendChild(sub);
+              return;
+            }
             var copy = document.createElement('a');
             copy.href = a.getAttribute('href');
             copy.textContent = (a.childNodes[0] && a.childNodes[0].textContent || a.textContent).trim();

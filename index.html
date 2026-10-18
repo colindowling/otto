@@ -47,7 +47,7 @@
 <style>
   /* Hero H1: each sentence must hold a single line. Sized so the longer line
      (line 1, 700wt) fits the full hero-copy width at laptop widths and up. */
-  .hero h1{max-width:100%;font-size:clamp(32px,4.6vw,60px);line-height:1.1;}
+  .hero h1{max-width:100%;font-size:clamp(26px,3.3vw,42px);line-height:1.14;}
   .hero h1 .tw{display:inline;border-right:2px solid var(--off-white);animation:tw-blink 0.8s step-end infinite;}
   .hero h1 .tw.done{border-right-color:transparent;animation:none;}
   .hero h1 .hero-line1{display:block;font-weight:700;color:var(--off-white);}
@@ -103,22 +103,26 @@
     <a href="/" class="logo" aria-label="ANTS home"><span class="mark" aria-hidden="true"></span><span class="word" aria-hidden="true"></span></a>
     <div class="navlinks">
       <div class="navdrop">
-        <a href="/solutions/" class="navdrop-trigger" aria-haspopup="true" aria-expanded="false">Where We Work<svg class="chev" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/solutions/" class="navdrop-trigger" aria-haspopup="true" aria-expanded="false">Solutions<svg class="chev" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <div class="navdrop-menu wide">
           <div class="mcol">
-            <div class="mlabel">Where it shows up</div>
-            <a href="/solutions/sales-marketing/">Sales &amp; Marketing<span class="d">Leads, follow-up, renewals — nothing goes cold</span></a>
-            <a href="/solutions/finance-ops/">Finance &amp; Ops<span class="d">Invoices, deadlines, compliance — nothing slips</span></a>
-            <a href="/solutions/falls-through-the-cracks/">Falls Through the Cracks<span class="d">The universal failure mode, named</span></a>
-            <a href="/solutions/missed-deadlines/">Missed Deadlines<span class="d">Compliance, contracts, reporting</span></a>
-            <a href="/solutions/customers-left-waiting/">Customers Left Waiting<span class="d">Response time is trust, spent or saved</span></a>
-            <a href="/solutions/missed-growth/">Missed Growth<span class="d">Signals nobody was watching for</span></a>
+            <div class="mlabel">Sales &amp; Marketing</div>
+            <a href="/solutions/more-leads/">Lead generation<span class="d">Outbound, intent signals and inbound response</span></a>
+            <a href="/solutions/shorter-sales-cycles/">Follow-up &amp; no-shows<span class="d">Every lead and meeting gets a next step</span></a>
+            <a href="/solutions/bigger-deals/">Deal prep<span class="d">Research and context before every call</span></a>
+            <a href="/solutions/more-revenue/">Renewals &amp; deal risk<span class="d">At-risk deals and renewals flagged early</span></a>
+            <div class="mlabel">Customer Success</div>
+            <a href="/solutions/customers-left-waiting/">Response time &amp; handoffs<span class="d">Routing and replies so no customer waits</span></a>
+            <a href="/solutions/missed-growth/">Expansion &amp; churn signals<span class="d">Usage, champion and competitor alerts</span></a>
           </div>
           <div class="mcol">
-            <div class="mlabel">Colony control</div>
-            <a href="/solutions/agent-sprawl/">Agent Sprawl<span class="d">Inventory and operate what already got built</span></a>
-            <a href="/solutions/shadow-ai/">Shadow AI<span class="d">Govern the agents nobody approved</span></a>
-            <a href="/solutions/agent-governance/">Governance<span class="d">Access control, audit, kill switch</span></a>
+            <div class="mlabel">Finance &amp; Operations</div>
+            <a href="/solutions/finance-ops/">Invoices &amp; collections<span class="d">AR reminders and collection-risk flags</span></a>
+            <a href="/solutions/missed-deadlines/">Deadlines &amp; compliance<span class="d">Filings, contracts and month-end close</span></a>
+            <div class="mlabel">Already running AI agents?</div>
+            <a href="/solutions/agent-sprawl/">Agent maintenance<span class="d">We take over and run what you've built</span></a>
+            <a href="/solutions/shadow-ai/">Shadow AI audit<span class="d">Find AI tools nobody approved</span></a>
+            <a href="/solutions/agent-governance/">Governance &amp; controls<span class="d">Access, audit logs and a kill switch</span></a>
           </div>
         </div>
       </div>
@@ -164,12 +168,12 @@
     <div class="hero-copy">
       <div class="hero-index">
         <span class="line"></span>
-        <span class="txt">Managed AI agent colonies</span>
+        <span class="txt">For teams on HubSpot, Pipedrive, ConnectWise &amp; QuickBooks</span>
       </div>
-      <h1 aria-label="You don't need an agent. You need a colony.">
+      <h1 aria-label="Fully managed AI agents for B2B teams. Inside the tools you already use.">
         <span class="hero-line1" aria-hidden="true"><span class="tw" id="tw1"></span></span><span class="hero-line2" aria-hidden="true"><span class="tw" id="tw2"></span></span>
       </h1>
-      <p class="sub">No single point of failure. No single department. Independent workers, each doing one job well, that get stronger the more of them you run — built and operated inside the tools you already have.</p>
+      <p class="sub">We build, run and maintain the AI agents that handle follow-ups, renewals, invoices and deadlines for your sales, customer success and finance teams. No new software to learn. Nothing for your team to babysit. Nothing falls through the cracks.</p>
       <div class="hero-ctas">
         <a href="/book/" class="btn-primary">Book a Colony Call</a>
         <a href="#how" class="btn-secondary">See how ANTS works</a>
@@ -402,9 +406,9 @@
   <h2 class="section-title">Recent posts and perspectives</h2>
   <div class="post-grid" style="margin-top:32px;">
 <a class="post-card" href="/blog/claudeforce-for-hubspot/"><div class="meta">Blog &middot; 5 Sep 2026</div><h3>Is There a Claudeforce for HubSpot?</h3><p>Claudeforce gives Salesforce sellers 37 prebuilt AI skills inside Claude. Here's what it actually is, what's Salesforce-locked, and how to build the equivalent.</p><span class="go">Read it &rarr;</span></a>
-<a class="post-card" href="/solutions/agent-sprawl/"><div class="meta">Colony control</div><h3>Agent Sprawl</h3><p>Someone built a worker. Then a few more appeared. Now nobody can say how many are running, what they touch, or who owns them.</p><span class="go">Read it &rarr;</span></a>
-<a class="post-card" href="/solutions/shadow-ai/"><div class="meta">Colony control</div><h3>Shadow AI</h3><p>Workers holding CRM, ERP, or API access that nobody approved, reviewed, or even knows exist.</p><span class="go">Read it &rarr;</span></a>
-<a class="post-card" href="/solutions/agent-governance/"><div class="meta">Colony control</div><h3>Governance</h3><p>Inventory, access control, audit trails, and a kill switch for every worker in your colony.</p><span class="go">Read it &rarr;</span></a>
+<a class="post-card" href="/solutions/agent-sprawl/"><div class="meta">AI Governance</div><h3>Agent Sprawl</h3><p>Someone built a worker. Then a few more appeared. Now nobody can say how many are running, what they touch, or who owns them.</p><span class="go">Read it &rarr;</span></a>
+<a class="post-card" href="/solutions/shadow-ai/"><div class="meta">AI Governance</div><h3>Shadow AI</h3><p>Workers holding CRM, ERP, or API access that nobody approved, reviewed, or even knows exist.</p><span class="go">Read it &rarr;</span></a>
+<a class="post-card" href="/solutions/agent-governance/"><div class="meta">AI Governance</div><h3>Governance</h3><p>Inventory, access control, audit trails, and a kill switch for every worker in your colony.</p><span class="go">Read it &rarr;</span></a>
   </div>
 </section>
 
@@ -498,10 +502,12 @@
         <p>Independent workers. One colony. Nothing falls through.</p>
       </div>
       <div class="foot-col">
-        <h4>Where We Work</h4>
+        <h4>Solutions</h4>
         <a href="/solutions/sales-marketing/">Sales &amp; Marketing</a>
-        <a href="/solutions/finance-ops/">Finance &amp; Ops</a>
-        <a href="/solutions/">All areas</a>
+        <a href="/solutions/customers-left-waiting/">Customer Success</a>
+        <a href="/solutions/finance-ops/">Finance &amp; Operations</a>
+        <a href="/solutions/agent-governance/">AI Governance</a>
+        <a href="/solutions/">All solutions</a>
       </div>
       <div class="foot-col">
         <h4>Platforms</h4>
@@ -563,10 +569,10 @@
     })();
   }
   setTimeout(function(){
-    tw(document.getElementById('tw1'),'You don\'t need an agent.',34,function(){
+    tw(document.getElementById('tw1'),'Fully managed AI agents for B2B teams.',20,function(){
       document.querySelector('.hero-line2').classList.add('typing');
       setTimeout(function(){
-        tw(document.getElementById('tw2'),'You need a colony.',40,function(){
+        tw(document.getElementById('tw2'),'Inside the tools you already use.',18,function(){
           setTimeout(function(){
             document.querySelector('.hero p.sub').classList.add('vis');
             setTimeout(function(){document.querySelector('.hero .hero-ctas').classList.add('vis');},200);
