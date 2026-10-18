@@ -38,7 +38,7 @@ ANTS builds inside the client's existing systems rather than replacing them.
 If it has an API, MCP, or webhooks, the colony can work in it.
 
 ## Pricing
-- The Colony Blueprint — $6,500 one-time. Required first step. Assessment across sales, finance or operations plus a prioritized worker roadmap. Client keeps it regardless; 50% credited toward year one on signing.
+- The Colony Blueprint — $9,500 one-time. Required first step. Assessment across sales, finance or operations plus a prioritized worker roadmap. Client keeps it regardless; 50% credited toward year one on signing.
 - Outpost — $5,000/mo, 12-month term. 3–4 workers live in the first 30 days, 1 new worker per month after. Best for a single function.
 - Colony — $9,500/mo, 12-month term. 8–10 workers live in the first 60 days, 2 new per month after. Best for a full department.
 - Supercolony — $17,000/mo, 12-month term. 15+ workers live in the first 90 days, 3 new per month after, dedicated pod. Best for multi-department coverage. (A supercolony, in nature, is independent colonies cooperating across a shared territory — Argentine ants are the famous case.)
