@@ -16,25 +16,25 @@ Then it loops.
 Worker build and deployment across the stack; weekly tuning based on live performance data; uptime monitoring and incident response; a live worker inventory with access control and audit trail; a monthly Colony Report; a direct Slack channel to the ANTS team; built around the team the client already has.
 
 ## Where ANTS works
-- Sales & Marketing — leads, follow-up, renewals. https://goforotto.com/solutions/sales-marketing/
-- Finance & Ops — invoices, deadlines, compliance. https://goforotto.com/solutions/finance-ops/
-- Falls Through the Cracks https://goforotto.com/solutions/falls-through-the-cracks/
-- Missed Deadlines https://goforotto.com/solutions/missed-deadlines/
-- Customers Left Waiting https://goforotto.com/solutions/customers-left-waiting/
-- Missed Growth https://goforotto.com/solutions/missed-growth/
-- Agent Sprawl, Shadow AI, Governance https://goforotto.com/solutions/agent-governance/
+- Sales & Marketing — leads, follow-up, renewals. https://www.withants.com/solutions/sales-marketing/
+- Finance & Ops — invoices, deadlines, compliance. https://www.withants.com/solutions/finance-ops/
+- Falls Through the Cracks https://www.withants.com/solutions/falls-through-the-cracks/
+- Missed Deadlines https://www.withants.com/solutions/missed-deadlines/
+- Customers Left Waiting https://www.withants.com/solutions/customers-left-waiting/
+- Missed Growth https://www.withants.com/solutions/missed-growth/
+- Agent Sprawl, Shadow AI, Governance https://www.withants.com/solutions/agent-governance/
 
 ## Example workers
 Sales & Marketing: pre-call research and pain mapping, post-call follow-up, lead routing and scoring, no-show recovery, deal risk flagging, renewal and expansion signals. Finance: invoice and AR follow-up, contract and renewal deadline tracking. Operations: SLA and ticket monitoring, onboarding and compliance tracking.
 
 ## Platforms
 ANTS builds inside the client's existing systems rather than replacing them.
-- HubSpot https://goforotto.com/platforms/hubspot/
-- Pipedrive https://goforotto.com/platforms/pipedrive/
-- ConnectWise & Autotask (also HaloPSA) https://goforotto.com/platforms/connectwise-autotask/
-- Finance & ops tools: QuickBooks, NetSuite, Bill.com, Ramp, Jira, Zendesk, Monday, Slack, plus Clay, Claude, Copilot, ChatGPT for Work, Gong. https://goforotto.com/platforms/other-tools/
-- Not on Salesforce? Salesforce got a first-party Claude integration in 2026; no equivalent exists for HubSpot, Pipedrive, ConnectWise, Autotask or HaloPSA. ANTS is that layer for everyone else. https://goforotto.com/platforms/not-on-salesforce/
-- Custom & legacy software: AI agents for homegrown, niche-industry and legacy systems, connected via API or, when there isn't one, via database access, scheduled exports, email parsing or browser automation. No switching costs, downtime or retraining. https://goforotto.com/platforms/custom-software/
+- HubSpot https://www.withants.com/platforms/hubspot/
+- Pipedrive https://www.withants.com/platforms/pipedrive/
+- ConnectWise & Autotask (also HaloPSA) https://www.withants.com/platforms/connectwise-autotask/
+- Finance & ops tools: QuickBooks, NetSuite, Bill.com, Ramp, Jira, Zendesk, Monday, Slack, plus Clay, Claude, Copilot, ChatGPT for Work, Gong. https://www.withants.com/platforms/other-tools/
+- Not on Salesforce? Salesforce got a first-party Claude integration in 2026; no equivalent exists for HubSpot, Pipedrive, ConnectWise, Autotask or HaloPSA. ANTS is that layer for everyone else. https://www.withants.com/platforms/not-on-salesforce/
+- Custom & legacy software: AI agents for homegrown, niche-industry and legacy systems, connected via API or, when there isn't one, via database access, scheduled exports, email parsing or browser automation. No switching costs, downtime or retraining. https://www.withants.com/platforms/custom-software/
 If it has an API, MCP, or webhooks, the colony can work in it.
 
 ## Pricing
@@ -55,13 +55,13 @@ The client owns its data, workflows and business outcomes. ANTS retains its meth
 Businesses at roughly $10M–$100M in revenue with real systems already in place across the functions they want covered (a CRM, an accounting platform, a PSA, a ticketing queue), typically having tried building agents in-house or with a point vendor and watched them stall. Not a fit for pre-revenue companies, one-time builds with no ongoing management, or website chatbots.
 
 ## Contact
-- Book a Colony Call (20 minutes): https://goforotto.com/book/
+- Book a Colony Call (20 minutes): https://www.withants.com/book/
 
 ## Key pages
-- Home: https://goforotto.com/
-- Solutions: https://goforotto.com/solutions/
-- Platforms: https://goforotto.com/platforms/
-- Pricing: https://goforotto.com/pricing/
-- Build vs. Managed: https://goforotto.com/build-vs-managed/
-- FAQ: https://goforotto.com/faq/
-- Blog: https://goforotto.com/blog/
+- Home: https://www.withants.com/
+- Solutions: https://www.withants.com/solutions/
+- Platforms: https://www.withants.com/platforms/
+- Pricing: https://www.withants.com/pricing/
+- Build vs. Managed: https://www.withants.com/build-vs-managed/
+- FAQ: https://www.withants.com/faq/
+- Blog: https://www.withants.com/blog/

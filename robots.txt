@@ -1,4 +1,4 @@
-# ANTS / goforotto.com
+# ANTS / withants.com
 #
 # Crawling is open. Automated crawlers, SEO auditors, and AI/LLM agents
 # are all permitted. See /llms.txt for content-usage guidance.
@@ -8,4 +8,4 @@ Allow: /
 
 LLM-Policy: /llms.txt
 
-Sitemap: https://goforotto.com/sitemap.xml
+Sitemap: https://www.withants.com/sitemap.xml
