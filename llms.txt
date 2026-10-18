@@ -34,6 +34,7 @@ ANTS builds inside the client's existing systems rather than replacing them.
 - ConnectWise & Autotask (also HaloPSA) https://goforotto.com/platforms/connectwise-autotask/
 - Finance & ops tools: QuickBooks, NetSuite, Bill.com, Ramp, Jira, Zendesk, Monday, Slack, plus Clay, Claude, Copilot, ChatGPT for Work, Gong. https://goforotto.com/platforms/other-tools/
 - Not on Salesforce? Salesforce got a first-party Claude integration in 2026; no equivalent exists for HubSpot, Pipedrive, ConnectWise, Autotask or HaloPSA. ANTS is that layer for everyone else. https://goforotto.com/platforms/not-on-salesforce/
+- Custom & legacy software: AI agents for homegrown, niche-industry and legacy systems, connected via API or, when there isn't one, via database access, scheduled exports, email parsing or browser automation. No switching costs, downtime or retraining. https://goforotto.com/platforms/custom-software/
 If it has an API, MCP, or webhooks, the colony can work in it.
 
 ## Pricing
