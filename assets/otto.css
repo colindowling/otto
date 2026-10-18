@@ -493,3 +493,7 @@ a.stack-item:hover{color:var(--ink);border-color:var(--slate);filter:grayscale(0
 .agent-group-label::after{content:"";flex:1;height:1px;background:var(--border);}
 .agent-group-label:first-of-type{margin-top:36px;}
 .footnote-colony{margin-top:28px;font-size:14.5px;line-height:1.7;color:var(--muted);font-style:italic;max-width:760px;border-left:2px solid var(--slate-bright);padding-left:18px;}
+
+/* 2x2 agent grid for four-card sets */
+.agent-grid.two{grid-template-columns:repeat(2,minmax(0,1fr));}
+@media (max-width:900px){.agent-grid.two{grid-template-columns:1fr;}}
