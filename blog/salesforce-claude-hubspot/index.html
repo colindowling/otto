@@ -8,7 +8,10 @@
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.withants.com/blog/salesforce-claude-hubspot/">
 <meta name="theme-color" content="#1d1b19">
-<meta name="author" content="ANTS">
+<meta name="author" content="Colin Dowling">
+<meta property="article:published_time" content="2026-09-04">
+<meta property="article:modified_time" content="2026-11-01">
+<meta property="article:author" content="Colin Dowling">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ANTS">
 <meta property="og:title" content="Salesforce Claude: What It Means for HubSpot | ANTS">
@@ -28,7 +31,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/otto.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.withants.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.withants.com/blog/"},{"@type":"ListItem","position":3,"name":"Salesforce Claude: What It Means for HubSpot","item":"https://www.withants.com/blog/salesforce-claude-hubspot/"}]},{"@type":"BlogPosting","headline":"Salesforce Claude: What It Means for HubSpot","description":"Salesforce and Anthropic shipped Claudeforce on 26 August 2026. Here's an accurate read of what it does, and what the equivalent looks like if HubSpot is your system of record.","url":"https://www.withants.com/blog/salesforce-claude-hubspot/","datePublished":"2026-09-04","dateModified":"2026-09-04","author":{"@type":"Organization","name":"ANTS","url":"https://www.withants.com/"},"publisher":{"@id":"https://www.withants.com/#org"},"image":"https://www.withants.com/assets/og.png","mainEntityOfPage":"https://www.withants.com/blog/salesforce-claude-hubspot/"}]}
+{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.withants.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.withants.com/blog/"},{"@type":"ListItem","position":3,"name":"Salesforce Claude: What It Means for HubSpot","item":"https://www.withants.com/blog/salesforce-claude-hubspot/"}]},{"@type":"BlogPosting","headline":"Salesforce Claude: What It Means for HubSpot","description":"Salesforce and Anthropic shipped Claudeforce on 26 August 2026. Here's an accurate read of what it does, and what the equivalent looks like if HubSpot is your system of record.","url":"https://www.withants.com/blog/salesforce-claude-hubspot/","datePublished":"2026-09-04","dateModified":"2026-11-01","author":{"@type":"Person","name":"Colin Dowling"},"publisher":{"@id":"https://www.withants.com/#org"},"image":"https://www.withants.com/assets/og.png","mainEntityOfPage":"https://www.withants.com/blog/salesforce-claude-hubspot/"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What did Salesforce and Anthropic announce?","acceptedAnswer":{"@type":"Answer","text":"On 26 August 2026 they announced Claudeforce. It launches with Salesforce in Claude, a plugin with 37 prebuilt sales skills, including meeting prep, deal health review, and pipeline review. Sellers reason over live CRM data from inside Claude. Actions route back through Salesforce, so existing rules and per-user permissions still apply. An admin connects it once."}},{"@type":"Question","name":"Does the Claudeforce plugin work on HubSpot?","acceptedAnswer":{"@type":"Answer","text":"No. It was built by Salesforce and Anthropic against Salesforce's data model, permissions, and action layer. That is why it does not generalise. HubSpot has a capable API and a well-structured object model. It does not have a jointly engineered reasoning layer that a vendor maintains for you."}},{"@type":"Question","name":"What can you build on HubSpot today?","acceptedAnswer":{"@type":"Answer","text":"The same three jobs: keep the record current without rep effort, surface what deserves attention, and act on it fast. Deal records can update from call and email content. Lead scoring and routing can fire on form submission. Renewal and expansion signals can be read off deal and contact properties."}},{"@type":"Question","name":"What does a plugin still leave unsolved?","acceptedAnswer":{"@type":"Answer","text":"A plugin ships and then it's your problem. You still have to decide which skills the team adopts and notice when a workflow change breaks an assumption. An agent that worked at launch can stop matching your ICP two quarters later. If nobody goes back in, it fails silently."}}]}]}
 </script>
 <script>document.documentElement.className+=' js';</script>
 </head>
@@ -101,10 +104,15 @@
 <section>
   <div class="wrap">
     <div class="post-meta">
-      <span>4 September 2026</span><span class="sep">/</span><span>6 min read</span><span class="sep">/</span><span>ANTS</span>
+      <span>By Colin Dowling</span><span class="sep">/</span><span>Published <time datetime="2026-09-04">4 September 2026</time></span><span class="sep">/</span><span>Updated <time datetime="2026-11-01">1 November 2026</time></span><span class="sep">/</span><span>6 min read</span>
     </div>
     <article class="post-body">
       <p class="lede">Salesforce sellers can now run their pipeline from inside Claude. If HubSpot is your system of record, nothing equivalent is coming from Anthropic or Salesforce. That's worth understanding precisely, rather than from the headline.</p>
+
+      <h2 class="q">What does the Salesforce Claude announcement mean if you run HubSpot?</h2>
+      <p class="direct-answer">Salesforce sellers can run pipeline work from inside Claude. If HubSpot is your system of record, nothing equivalent is coming from Salesforce or Anthropic. The plugin was built against Salesforce's data model, so it doesn't carry over. The same three jobs are buildable on HubSpot today. Operating them is where the value lives.</p>
+      <p>What Claudeforce refers to, and how the pieces fit together on HubSpot, is in <a href="/blog/claudeforce-for-hubspot/">Is there a Claudeforce for HubSpot?</a> The same announcement if you run <a href="/blog/salesforce-claude-pipedrive/">Pipedrive</a> or <a href="/blog/salesforce-claude-connectwise-autotask/">ConnectWise or Autotask</a>.</p>
+
 
       <div class="callout">
 <p><strong>What was actually announced.</strong> On 26 August 2026, Salesforce and Anthropic announced an expanded partnership branded Claudeforce. It launches with <em>Salesforce in Claude</em>, a plugin carrying 37 prebuilt sales skills, including meeting prep, deal health review, and pipeline review, that let sellers reason over live CRM data and take governed action from inside Claude.</p>
@@ -134,6 +142,28 @@
         </div>
       </div>
 
+      <h2>Questions people ask</h2>
+
+      <details class="qa">
+        <summary>What did Salesforce and Anthropic announce?</summary>
+        <div class="a"><p>On 26 August 2026 they announced Claudeforce. It launches with Salesforce in Claude, a plugin with 37 prebuilt sales skills, including meeting prep, deal health review, and pipeline review. Sellers reason over live CRM data from inside Claude. Actions route back through Salesforce, so existing rules and per-user permissions still apply. An admin connects it once.</p></div>
+      </details>
+
+      <details class="qa">
+        <summary>Does the Claudeforce plugin work on HubSpot?</summary>
+        <div class="a"><p>No. It was built by Salesforce and Anthropic against Salesforce's data model, permissions, and action layer. That is why it does not generalise. HubSpot has a capable API and a well-structured object model. It does not have a jointly engineered reasoning layer that a vendor maintains for you.</p></div>
+      </details>
+
+      <details class="qa">
+        <summary>What can you build on HubSpot today?</summary>
+        <div class="a"><p>The same three jobs: keep the record current without rep effort, surface what deserves attention, and act on it fast. Deal records can update from call and email content. Lead scoring and routing can fire on form submission. Renewal and expansion signals can be read off deal and contact properties.</p></div>
+      </details>
+
+      <details class="qa">
+        <summary>What does a plugin still leave unsolved?</summary>
+        <div class="a"><p>A plugin ships and then it's your problem. You still have to decide which skills the team adopts and notice when a workflow change breaks an assumption. An agent that worked at launch can stop matching your ICP two quarters later. If nobody goes back in, it fails silently.</p></div>
+      </details>
+
       <aside class="callout related-solution" aria-label="Related solution">
         <p class="kicker">Related solution</p>
         <p class="name"><a href="/solutions/sales-marketing/?utm_source=blog&amp;utm_medium=internal&amp;utm_campaign=blog_salesforce-claude-hubspot&amp;utm_content=related">Sales &amp; Marketing</a></p>
@@ -149,6 +179,7 @@
     <div class="section-tag"><span class="line"></span><span class="txt">Keep reading</span></div>
     <h2 class="section-title">The same question, other stacks</h2>
     <div class="siblings">
+<a class="sib" href="/blog/claudeforce-for-hubspot/"><div class="lbl">Also in this series</div><h3>Is there a Claudeforce for HubSpot?</h3><p>What Claudeforce actually is, what's Salesforce-locked, and how to build the equivalent on HubSpot.</p></a>
 <a class="sib" href="/blog/salesforce-claude-connectwise-autotask/"><div class="lbl">Also in this series</div><h3>If you run ConnectWise & Autotask</h3><p>An accurate read of the Salesforce and Anthropic Claudeforce announcement, and what the equivalent looks like when your …</p></a>
 <a class="sib" href="/blog/salesforce-claude-pipedrive/"><div class="lbl">Also in this series</div><h3>If you run Pipedrive</h3><p>What the Salesforce and Anthropic Claudeforce announcement actually shipped, and what the equivalent depth looks like fo…</p></a>
     </div>
