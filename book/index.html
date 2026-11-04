@@ -181,6 +181,15 @@
             <input type="text" id="owebsite" name="_gotcha" tabindex="-1" autocomplete="off">
           </div>
 
+          <input type="hidden" name="landing_page" value="">
+          <input type="hidden" name="referrer" value="">
+          <input type="hidden" name="offer_page" value="">
+          <input type="hidden" name="utm_source" value="">
+          <input type="hidden" name="utm_medium" value="">
+          <input type="hidden" name="utm_campaign" value="">
+          <input type="hidden" name="utm_content" value="">
+          <input type="hidden" name="utm_term" value="">
+
           <button type="submit" class="btn-primary on-light" id="ofBtn"><span>Request a Colony Call</span></button>
           <div class="of-error" id="ofError" role="alert"></div>
         </form>
@@ -196,7 +205,7 @@
         <h3>Or book straight in</h3>
         <p class="bf-lede">Pick a time that works. The context conversation can happen on the call.</p>
         <div class="calendly-wrapper">
-          <div class="calendly-inline-widget" data-url="https://calendly.com/30minutechat/20-minute-gtm-agents-chat?hide_event_type_details=1&hide_gdpr_banner=1&background_color=1d1b19&text_color=f2efe9&primary_color=7c8b99&utm_source=withants.com&utm_medium=website&utm_campaign=otto_pit_review&utm_content=ANTS&utm_term=book-page" style="min-width:100%;height:700px;"></div>
+          <div class="calendly-inline-widget" data-url="https://calendly.com/30minutechat/20-minute-gtm-agents-chat?hide_event_type_details=1&hide_gdpr_banner=1&background_color=1d1b19&text_color=f2efe9&primary_color=7c8b99" style="min-width:100%;height:700px;"></div>
         </div>
       </div>
 
@@ -249,6 +258,7 @@
   </div>
 </footer>
 
+<script src="/assets/track.js"></script>
 <script>
 (function () {
   // ---------------------------------------------------------------
@@ -273,6 +283,11 @@
     clearError();
 
     var name = form.name.value.trim();
+    if (window.antsFillBookingForm) window.antsFillBookingForm();
+    function hiddenValue(fieldName) {
+      var input = form.querySelector('input[type="hidden"][name="' + fieldName + '"]');
+      return input ? input.value : '';
+    }
     var payload = {
       name:        name,
       email:       form.email.value.trim(),
@@ -287,8 +302,19 @@
       property:    'ANTS',
       site:        'withants.com',
       source:      'otto-book-page',
-      page_url:    window.location.href
+      page_url:    window.location.href,
+      landing_page: hiddenValue('landing_page'),
+      referrer:     hiddenValue('referrer'),
+      offer_page:   hiddenValue('offer_page'),
+      utm_source:   hiddenValue('utm_source'),
+      utm_medium:   hiddenValue('utm_medium'),
+      utm_campaign: hiddenValue('utm_campaign'),
+      utm_content:  hiddenValue('utm_content'),
+      utm_term:     hiddenValue('utm_term')
     };
+    Array.prototype.forEach.call(form.querySelectorAll('input[type="hidden"]'), function (input) {
+      if (input.name && input.name.indexOf('utm_') === 0) payload[input.name] = input.value;
+    });
 
     if (!payload.name || !payload.email || !payload.company || !payload.role || !payload.message) {
       showError('Please complete the required fields.'); return;
@@ -309,9 +335,7 @@
         form.style.display = 'none';
         success.classList.add('active');
         success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        if (typeof gtag === 'function') {
-          gtag('event', 'contact_form_submit', { form_location: 'otto-book-page', venture: 'otto' });
-        }
+        if (window.antsTrack) window.antsTrack('contact_form_submit', { form_location: 'book-page' });
       } else {
         showError('Something went wrong on our end. Please try again in a moment.');
         btn.disabled = false;
@@ -324,18 +348,6 @@
     });
   });
 
-  // Calendly conversion tracking, stamped as ANTS.
-  window.addEventListener('message', function (e) {
-    if (!e || !e.data || typeof e.data.event !== 'string') return;
-    if (e.data.event.indexOf('calendly.') !== 0) return;
-    if (typeof gtag !== 'function') return;
-    if (e.data.event === 'calendly.date_and_time_selected') {
-      gtag('event', 'calendly_time_selected', { location: 'otto-book-page', venture: 'otto' });
-    }
-    if (e.data.event === 'calendly.event_scheduled') {
-      gtag('event', 'meeting_booked', { location: 'otto-book-page', venture: 'otto' });
-    }
-  });
 })();
 </script>
 <script src="/assets/nav.js" defer></script>
