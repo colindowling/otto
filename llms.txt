@@ -62,6 +62,5 @@ Businesses at roughly $10M–$100M in revenue with real systems already in place
 - Solutions: https://www.withants.com/solutions/
 - Platforms: https://www.withants.com/platforms/
 - Pricing: https://www.withants.com/pricing/
-- Build vs. Managed: https://www.withants.com/build-vs-managed/
 - FAQ: https://www.withants.com/faq/
 - Blog: https://www.withants.com/blog/
