@@ -55,7 +55,7 @@ The client owns its data, workflows and business outcomes. ANTS retains its meth
 Businesses at roughly $10M–$100M in revenue with real systems already in place across the functions they want covered (a CRM, an accounting platform, a PSA, a ticketing queue), typically having tried building agents in-house or with a point vendor and watched them stall. Not a fit for pre-revenue companies, one-time builds with no ongoing management, or website chatbots.
 
 ## Contact
-- Book a Colony Call (20 minutes): https://www.withants.com/book/
+- Book a 20-minute call: https://www.withants.com/book/
 
 ## Key pages
 - Home: https://www.withants.com/
