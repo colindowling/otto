@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Book a Colony Call — 30 Minutes, No Pitch | ANTS</title>
+<title>Book a Colony Call — 20 Minutes, No Pitch | ANTS</title>
 <meta name="description" content="Book a 20-minute Colony Call with ANTS. We look at the agents you've already built or tried, flag where agent sprawl and shadow AI risk exist, and tell you honestly whether ANTS is a fit.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.withants.com/book/">
@@ -11,14 +11,14 @@
 <meta name="author" content="ANTS">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ANTS">
-<meta property="og:title" content="Book a Colony Call — 30 Minutes, No Pitch | ANTS">
+<meta property="og:title" content="Book a Colony Call — 20 Minutes, No Pitch | ANTS">
 <meta property="og:description" content="20 minutes. No pressure. Bring what you've already built and we'll tell you honestly whether ANTS is a fit.">
 <meta property="og:url" content="https://www.withants.com/book/">
 <meta property="og:image" content="https://www.withants.com/assets/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Book a Colony Call — 30 Minutes, No Pitch | ANTS">
+<meta name="twitter:title" content="Book a Colony Call — 20 Minutes, No Pitch | ANTS">
 <meta name="twitter:description" content="20 minutes. No pressure. Bring what you've already built and we'll tell you honestly whether ANTS is a fit.">
 <meta name="twitter:image" content="https://www.withants.com/assets/og.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -122,7 +122,8 @@
         <h3>Send context first</h3>
         <p class="bf-lede">Tell us what you're working with and we'll come to the call already up to speed.</p>
 
-        <form id="ottoForm" novalidate>
+        <form id="ottoForm" action="https://formspree.io/f/xjglkdyp" method="POST" novalidate>
+          <input type="hidden" name="_subject" id="ofSubject" value="ANTS — booking request">
           <div class="frow">
             <label for="oname">Name <span>*</span></label>
             <input type="text" id="oname" name="name" placeholder="First and last name" required autocomplete="name">
@@ -196,7 +197,7 @@
         <h3>Or book straight in</h3>
         <p class="bf-lede">Pick a time that works. The context conversation can happen on the call.</p>
         <div class="calendly-wrapper">
-          <div class="calendly-inline-widget" data-url="https://calendly.com/30minutechat/20-minute-gtm-agents-chat?hide_event_type_details=1&hide_gdpr_banner=1&background_color=1d1b19&text_color=f2efe9&primary_color=7c8b99&utm_source=withants.com&utm_medium=website&utm_campaign=otto_pit_review&utm_content=ANTS&utm_term=book-page" style="min-width:100%;height:700px;"></div>
+          <div class="calendly-inline-widget" data-url="https://calendly.com/30minutechat/20-minute-gtm-agents-chat?hide_event_type_details=1&hide_gdpr_banner=1&background_color=1d1b19&text_color=f2efe9&primary_color=7c8b99&utm_source=withants.com&utm_medium=website&utm_campaign=ants_book_20min&utm_content=ANTS&utm_term=book-page" style="min-width:100%;height:700px;"></div>
         </div>
       </div>
 
@@ -268,6 +269,57 @@
   function showError(msg) { errBox.textContent = msg; errBox.classList.add('active'); }
   function clearError() { errBox.classList.remove('active'); errBox.textContent = ''; }
 
+  // Free-mail domains blocked on this form. Add or remove hosts here.
+  // Match is case-insensitive on the host after @, including subdomains.
+  // Country Yahoo hosts (yahoo.co.uk, yahoo.fr, yahoo.com.au, and so on)
+  // are matched with this list, in isFreeMailAddress.
+  var FREE_MAIL_DOMAINS = [
+    'gmail.com',
+    'googlemail.com',
+    'outlook.com',
+    'hotmail.com',
+    'live.com',
+    'msn.com',
+    'yahoo.com',
+    'ymail.com',
+    'me.com',
+    'icloud.com',
+    'mac.com'
+  ];
+
+  function isFreeMailAddress(email) {
+    var at = String(email || '').lastIndexOf('@');
+    if (at < 0) return false;
+    var host = String(email).slice(at + 1).trim().toLowerCase().replace(/\.+$/, '');
+    if (!host) return false;
+    var i, blocked, suffix;
+    for (i = 0; i < FREE_MAIL_DOMAINS.length; i++) {
+      blocked = FREE_MAIL_DOMAINS[i];
+      suffix = '.' + blocked;
+      if (host === blocked || (host.length > suffix.length && host.slice(-suffix.length) === suffix)) return true;
+    }
+    return /(^|\.)yahoo\.([a-z]{2}|co\.[a-z]{2}|com\.[a-z]{2})$/.test(host);
+  }
+
+  function bookingSubject(name, email) {
+    name = String(name || '').trim();
+    email = String(email || '').trim();
+    if (!name || !email) return 'ANTS \u2014 booking request';
+    return 'ANTS \u2014 ' + name + ' \u2014 ' + email;
+  }
+
+  // Fills Formspree's _subject before submit. Without JS the hidden
+  // input keeps its static fallback, "ANTS — booking request".
+  form.addEventListener('submit', function (e) {
+    var email = form.email.value.trim();
+    var subjectInput = document.getElementById('ofSubject');
+    if (subjectInput) subjectInput.value = bookingSubject(form.name.value, email);
+    if (!isFreeMailAddress(email)) return;
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    showError('Please use your work email.');
+  }, true);
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     clearError();
@@ -283,7 +335,7 @@
       message:     form.message.value.trim(),
       _gotcha:     form._gotcha.value,
       // --- ANTS provenance stamps ---
-      _subject:    'ANTS \u2014 Colony Call request from ' + name,
+      _subject:    document.getElementById('ofSubject').value,
       property:    'ANTS',
       site:        'withants.com',
       source:      'otto-book-page',
